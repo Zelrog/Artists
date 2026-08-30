@@ -4,7 +4,7 @@ const platformMap = {
         label: "FurAffinity" 
     },
     e621: { 
-        iconHTML: `<svg viewBox="0 0 24 24" width="1.15em" height="1.15em"><defs><mask id="e621-mask-item"><path fill="white" d="M 11 4.5 L 17.5 8.5 L 17.5 10 Q 21 9 23 8 Q 21 13 17.5 14.5 L 17.5 16.5 L 11 20.5 L 4.5 16.5 L 4.5 8.5 Q 5 5 7 1.5 Q 8.5 4 9.5 5.5 L 11 4.5 Z"/><path fill="black" d="M 11 18 C 7.5 18 5 15.5 5 12 C 5 8.5 7.5 6 11 6 C 14.5 6 17 8.5 17 12 C 17 12.5 17 13 17 13 L 7 13 C 7.5 15 9 16 11 16 C 12.5 16 13.5 15.5 14.5 14 L 16.5 15 C 15 17 13.5 18 11 18 Z"/><path fill="white" d="M 15 11.5 C 14.5 9 13 8 11 8 C 9 8 7.5 9 7.2 11.5 Z"/></mask></defs><rect width="24" height="24" fill="currentColor" mask="url(#e621-mask-item)" /></svg>`, 
+        iconHTML: `<svg viewBox="0 0 24 24" width="1.15em" height="1.15em" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 1L21.5 6.5V17.5L12 23L2.5 17.5V6.5ZM16 10.5C16 9 15 8 12.5 8C10 8 8 10 8 12.5C8 15.5 10 17 12.5 17C14.5 17 16 16 16 14.5H14C14 15 13.5 15.5 12.5 15.5C11 15.5 10 14.5 10 13H16V10.5ZM10 11.5C10 10.5 11 9.5 12.5 9.5C14 9.5 14 10.5 14 11.5H10Z" /></svg>`, 
         label: "e621" 
     },
     bluesky: { 
