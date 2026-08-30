@@ -176,3 +176,15 @@ header {
     opacity: 1;
     pointer-events: all;
 }
+
+/* --- CUSTOM ICON STYLES --- */
+.e621-icon {
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 0.9em;
+    letter-spacing: -0.5px;
+}
+
+.filter-btn svg, .social-link svg, .preview-icons svg {
+    vertical-align: -0.125em; /* Aligns the Bluesky SVG perfectly with text */
+}
