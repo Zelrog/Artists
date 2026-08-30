@@ -1,96 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Artist List</title>
-  <style>
-    body { background: #0a1005; color: #87b922; font-family: monospace; }
-    h1 { color: #a4e022; text-shadow: 2px 2px #000; }
-    .artist { margin: 10px; padding: 15px; border: 2px dashed #4a6c17; cursor: pointer; background: #111a08; }
-    .artist:hover { background: #1c2b0c; }
-    .details { display: none; margin-top: 10px; background: #000; padding: 10px; border-top: 1px solid #87b922; }
-    .icon { width: 24px; height: 24px; vertical-align: middle; margin-right: 8px; filter: drop-shadow(1px 1px 0 #000); }
-    .link-item { display: block; margin: 8px 0; color: #b7e643; text-decoration: none; }
-    .link-item:hover { text-decoration: underline; color: #fff; }
-    select { background: #222; color: #87b922; padding: 8px; border: 1px solid #4a6c17; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Artists</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-  <h1>Artists:</h1>
-  
-  <label for="filter">Sort by Social: </label>
-  <select id="filter">
-    <option value="all">All Socials</option>
-    <option value="furaffinity">FurAffinity</option>
-    <option value="bluesky">BlueSky</option>
-    <option value="e621">e621</option>
-    <option value="twitter">Twitter</option>
-    <option value="pixiv">Pixiv</option>
-    <option value="telegram">Telegram</option>
-  </select>
-  
-  <div id="list"></div>
 
-  <script>
-    // Priority order updated with Telegram
-    const priority = ['furaffinity', 'bluesky', 'e621', 'twitter', 'pixiv', 'telegram'];
+    <header>
+        <h1 class="title-font">My Artist Stash</h1>
+        <p class="body-font">Filter artists by platform:</p>
+        
+        <!-- Sorting Buttons -->
+        <div class="filters" id="filters">
+            <button class="filter-btn active" data-platform="all">All</button>
+            <button class="filter-btn" data-platform="twitter" title="Twitter/X"><i class="fa-brands fa-x-twitter"></i></button>
+            <button class="filter-btn" data-platform="bluesky" title="Bluesky"><i class="fa-brands fa-bluesky"></i></button>
+            <button class="filter-btn" data-platform="pixiv" title="Pixiv"><i class="fa-solid fa-palette"></i></button>
+            <button class="filter-btn" data-platform="fa" title="FurAffinity"><i class="fa-solid fa-paw"></i></button>
+            <button class="filter-btn" data-platform="telegram" title="Telegram"><i class="fa-brands fa-telegram"></i></button>
+        </div>
+    </header>
 
-    fetch('artists.txt')
-      .then(r => r.text())
-      .then(data => {
-        const lines = data.split('\n').filter(l => l.trim() !== '');
-        const artists = lines.map(line => {
-          const parts = line.split('|').map(s => s.trim());
-          const name = parts[0];
-          const aliases = parts[1] || null;
-          const links = parts[2] ? parts[2].split(' ').filter(l => l) : [];
-          
-          const socials = [];
-          links.forEach(link => {
-            const lower = link.toLowerCase();
-            priority.forEach(p => {
-              if (lower.includes(p) || (p === 'telegram' && lower.includes('t.me'))) {
-                socials.push({ plat: p, url: link });
-              }
-            });
-          });
-          
-          socials.sort((a, b) => priority.indexOf(a.plat) - priority.indexOf(b.plat));
+    <main>
+        <!-- Artist Grid -->
+        <div class="artist-grid" id="artistGrid"></div>
+    </main>
 
-          return { name, aliases, socials };
-        });
+    <!-- Sliding Side Panel -->
+    <div id="sidePanel" class="side-panel">
+        <button id="closePanel" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        <div class="panel-content" id="panelContent">
+            <!-- Content injected by JavaScript -->
+        </div>
+    </div>
+    
+    <!-- Overlay for when panel is open -->
+    <div id="panelOverlay" class="panel-overlay"></div>
 
-        const list = document.getElementById('list');
-        const filter = document.getElementById('filter');
-
-        const render = (filterPlat) => {
-          list.innerHTML = '';
-          artists.forEach(a => {
-            if(filterPlat !== 'all' && !a.socials.some(s => s.plat === filterPlat)) return;
-
-            const div = document.createElement('div');
-            div.className = 'artist';
-            div.innerHTML = `<h2>${a.name}</h2>`;
-
-            const det = document.createElement('div');
-            det.className = 'details';
-            if(a.aliases) det.innerHTML += `<p><i>Also known as: ${a.aliases}</i></p>`;
-
-            a.socials.forEach(s => {
-              det.innerHTML += `<a class="link-item" href="${s.url}" target="_blank">
-                <img src="icons/${s.plat}.png" class="icon" alt="${s.plat}"> ${s.url}
-              </a>`;
-            });
-
-            div.onclick = () => det.style.display = det.style.display === 'block' ? 'none' : 'block';
-            div.appendChild(det);
-            list.appendChild(div);
-          });
-        };
-
-        filter.onchange = (e) => render(e.target.value);
-        render('all');
-      });
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>
