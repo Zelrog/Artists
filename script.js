@@ -1,10 +1,10 @@
 const platformMap = {
     fa: { 
-        iconHTML: `<svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor"><circle cx="6" cy="9.5" r="2.5"/><circle cx="10" cy="5" r="2.5"/><circle cx="15.5" cy="5.5" r="2.5"/><circle cx="19.5" cy="9.5" r="2.5"/><path d="M11.2 10.5C6 10.5 2 13 2 17C2 20.5 6.5 23 11.2 23L11.2 20L7.5 20L7.5 17.5L11.2 17.5L11.2 15.5L7.5 15.5L7.5 12.5L11.2 12.5Z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12.8 10.5C18 10.5 22 13 22 17C22 20.5 17.5 23 12.8 23L12.8 20L14 20L15.5 16.5L18.5 16.5L20 20L21.5 20C21.5 17 19 13.5 17 12.5L12.8 12.5ZM17 13.5L16 15.5L18 15.5Z"/></svg>`, 
+        iconHTML: `<i class="fa-solid fa-paw"></i>`, 
         label: "FurAffinity" 
     },
     e621: { 
-        iconHTML: `<svg viewBox="0 0 24 24" width="1.15em" height="1.15em" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 22L19.5 13L18 8.5L22 2L14.5 5.5L12 4L9.5 5.5L2 2L6 8.5L4.5 13ZM12 17.5L16 12L14 9.5L10 9.5L8 12Z"/></svg>`, 
+        iconHTML: `<svg viewBox="0 0 24 24" width="1.15em" height="1.15em"><defs><mask id="e621-mask-item"><path fill="white" d="M 11 4.5 L 17.5 8.5 L 17.5 10 Q 21 9 23 8 Q 21 13 17.5 14.5 L 17.5 16.5 L 11 20.5 L 4.5 16.5 L 4.5 8.5 Q 5 5 7 1.5 Q 8.5 4 9.5 5.5 L 11 4.5 Z"/><path fill="black" d="M 11 18 C 7.5 18 5 15.5 5 12 C 5 8.5 7.5 6 11 6 C 14.5 6 17 8.5 17 12 C 17 12.5 17 13 17 13 L 7 13 C 7.5 15 9 16 11 16 C 12.5 16 13.5 15.5 14.5 14 L 16.5 15 C 15 17 13.5 18 11 18 Z"/><path fill="white" d="M 15 11.5 C 14.5 9 13 8 11 8 C 9 8 7.5 9 7.2 11.5 Z"/></mask></defs><rect width="24" height="24" fill="currentColor" mask="url(#e621-mask-item)" /></svg>`, 
         label: "e621" 
     },
     bluesky: { 
@@ -16,7 +16,7 @@ const platformMap = {
         label: "Twitter" 
     },
     pixiv: { 
-        iconHTML: `<svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor"><path d="M18.8 4.67a7.02 7.02 0 0 0-11.45 2.1c-.74 2.47-.09 5.25 1.71 7.03.95.95 2.22 1.5 3.55 1.57v8.63h4.63v-9.15a6.97 6.97 0 0 0 3.22-1.92 7.06 7.06 0 0 0 1.69-7.04c-.49-1.63-1.66-2.93-3.35-3.22zm-2.82 8.35a4.7 4.7 0 0 1-4.25.75v-8.98a4.7 4.7 0 0 1 4.25.74 4.74 4.74 0 0 1 1.72 3.75 4.74 4.74 0 0 1-1.72 3.74z"/></svg>`, 
+        iconHTML: `<i class="fa-brands fa-pixiv"></i>`, 
         label: "Pixiv" 
     }
 };
