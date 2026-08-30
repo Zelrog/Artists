@@ -14,214 +14,276 @@
 :root {
     --bg-color: #121212;
     --card-bg: #1e1e1e;
+    --card-hover: #262626;
     --text-main: #f0f0f0;
     --text-muted: #a0a0a0;
-    --accent: #5865F2; /* Discord-ish blurple for highlights */
+    --accent: #5865F2;
+    --accent-hover: #4752c4;
+}
+
+/* ============================================================
+   2. GLOBAL STYLES
+   ============================================================ */
+* {
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
+    padding: 0;
     background-color: var(--bg-color);
     color: var(--text-main);
-    font-family: 'SecondaryFont', sans-serif; /* Body font */
+    font-family: 'SecondaryFont', sans-serif;
+    min-height: 100vh;
 }
 
-h1, h2, h3 { font-family: 'PrimaryFont', sans-serif; }
-button { font-family: 'UIFont', sans-serif; }
+h1, h2, h3 { 
+    font-family: 'PrimaryFont', sans-serif; 
+    letter-spacing: 0.5px;
+}
+
+button { 
+    font-family: 'UIFont', sans-serif; 
+}
 
 header {
     text-align: center;
-    padding: 2rem;
-    border-bottom: 1px solid #333;
+    padding: 2.5rem 1rem 2rem;
+    border-bottom: 1px solid #2a2a2a;
 }
 
-/* --- 2. FILTER BUTTONS --- */
+header h1 {
+    font-size: 2.4rem;
+    margin: 0 0 0.5rem 0;
+}
+
+header p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin: 0 0 1.5rem 0;
+}
+
+/* ============================================================
+   3. FILTER BUTTONS (NEAT & UNIFORM)
+   ============================================================ */
 .filters {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-top: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .filter-btn {
     background: var(--card-bg);
     color: var(--text-main);
     border: 2px solid #333;
-    padding: 10px 15px;
-    border-radius: 8px;
+    min-width: 48px;
+    height: 48px;
+    padding: 0 16px;
+    border-radius: 10px;
     cursor: pointer;
-    font-size: 1.2rem;
-    transition: 0.2s ease;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.2s ease;
     display: inline-flex;
     align-items: center;
     justify-content: center;
 }
-.filter-btn:hover, .filter-btn.active {
-    background: var(--accent);
-    border-color: var(--accent);
+
+.filter-btn svg {
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
+    display: block;
 }
 
-/* --- 3. ARTIST GRID --- */
+.filter-btn:hover {
+    background: var(--card-hover);
+    border-color: #444;
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(88, 101, 242, 0.35);
+}
+
+/* ============================================================
+   4. ARTIST GRID & CARDS
+   ============================================================ */
 .artist-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 22px;
+    padding: 2.5rem 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .artist-card {
     background: var(--card-bg);
-    border-radius: 12px;
-    padding: 20px;
+    border-radius: 14px;
+    padding: 24px 16px;
     text-align: center;
     cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
-    border: 1px solid #333;
+    transition: transform 0.2s cubic-bezier(0.25, 0.8, 0.25, 1), 
+                box-shadow 0.2s ease, 
+                border-color 0.2s ease;
+    border: 1px solid #2e2e2e;
 }
 
 .artist-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    transform: translateY(-6px);
+    background: var(--card-hover);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
     border-color: var(--accent);
 }
 
-.artist-card h3 { margin: 10px 0; }
+.artist-card h3 { 
+    margin: 0 0 12px 0;
+    font-size: 1.3rem;
+}
 
 .preview-icons {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     color: var(--text-muted);
-    font-size: 1.1rem;
-    margin-top: 10px;
 }
 
-/* --- 4. SLIDING SIDE PANEL --- */
+.icon-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-wrap svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    display: block;
+}
+
+/* ============================================================
+   5. SLIDING SIDE PANEL
+   ============================================================ */
 .side-panel {
     position: fixed;
     top: 0;
-    right: -450px; /* Hidden off-screen to the right by default */
-    width: 400px;
+    right: -450px;
+    width: 420px;
     max-width: 90vw;
     height: 100vh;
-    background: var(--card-bg);
-    box-shadow: -5px 0 20px rgba(0,0,0,0.8);
-    transition: right 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    background: #181818;
+    box-shadow: -6px 0 25px rgba(0, 0, 0, 0.85);
+    transition: right 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
     z-index: 1000;
     overflow-y: auto;
     border-left: 2px solid var(--accent);
 }
 
 .side-panel.open {
-    right: 0; /* Slides into view */
+    right: 0;
 }
 
 .close-btn {
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 16px;
+    left: 16px;
     background: transparent;
     border: none;
     color: var(--text-muted);
     font-size: 1.8rem;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.2s;
 }
-.close-btn:hover { color: #ff5555; }
 
-.panel-content { padding: 40px 20px 20px; }
+.close-btn:hover { 
+    color: #ff5555; 
+    background: rgba(255, 85, 85, 0.1);
+}
+
+.panel-content { 
+    padding: 50px 24px 30px; 
+}
 
 .panel-image {
     width: 100%;
+    max-height: 340px;
     border-radius: 12px;
     object-fit: cover;
     margin-bottom: 20px;
+    border: 1px solid #333;
 }
 
 .aliases {
     color: var(--text-muted);
     font-style: italic;
-    margin-bottom: 20px;
+    font-size: 0.95rem;
+    margin-bottom: 24px;
 }
 
 .social-links {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
 
 .social-link {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 12px;
-    background: #2a2a2a;
+    gap: 14px;
+    padding: 14px 18px;
+    background: #242424;
     color: var(--text-main);
     text-decoration: none;
-    border-radius: 8px;
-    transition: background 0.2s;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border: 1px solid #333;
 }
-.social-link:hover { background: var(--accent); }
 
-/* Background overlay when panel is open */
+.social-link .icon-wrap svg {
+    width: 22px;
+    height: 22px;
+}
+
+.social-link:hover { 
+    background: var(--accent); 
+    border-color: var(--accent);
+    color: #fff;
+    transform: translateX(4px);
+}
+
+/* ============================================================
+   6. PANEL OVERLAY
+   ============================================================ */
 .panel-overlay {
     position: fixed;
-    top: 0; left: 0; width: 100vw; height: 100vh;
-    background: rgba(0,0,0,0.5);
+    top: 0; 
+    left: 0; 
+    width: 100vw; 
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.4s ease;
+    transition: opacity 0.35s ease;
     z-index: 999;
 }
+
 .panel-overlay.active {
     opacity: 1;
     pointer-events: all;
-}
-
-/* --- CUSTOM ICON STYLES --- */
-.filter-btn svg, .social-link svg, .preview-icons svg {
-    vertical-align: -0.125em; /* Aligns the Bluesky SVG perfectly with text */
-}
-
-/* --- OFFICIAL PLATFORM ICONS (CSS MASK TRICK) --- */
-/* This ensures all icons align perfectly with standard FontAwesome icons */
-.icon-fa, .icon-bluesky, .icon-pixiv, .icon-e621 {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    background-color: currentColor;
-    vertical-align: -0.125em; 
-    -webkit-mask-size: contain;
-    mask-size: contain;
-}
-
-/* FurAffinity: Official Tilted Paw */
-.icon-fa {
-    width: 1.1em; /* FA paw is slightly wider */
-    -webkit-mask: url('https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/furaffinity.svg') no-repeat center;
-    mask: url('https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/furaffinity.svg') no-repeat center;
-}
-
-/* Bluesky: Official Centered Butterfly */
-.icon-bluesky {
-    -webkit-mask: url('https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/bluesky.svg') no-repeat center;
-    mask: url('https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/bluesky.svg') no-repeat center;
-}
-
-/* Pixiv: Official Logo */
-.icon-pixiv {
-    -webkit-mask: url('https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/pixiv.svg') no-repeat center;
-    mask: url('https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/pixiv.svg') no-repeat center;
-}
-
-/* e621: Custom Hexagon Cutout Logo */
-.icon-e621 {
-    width: 1.15em;
-    height: 1.15em;
-    vertical-align: -0.2em;
-    /* Generates an SVG Hexagon with e621 cut out of the middle! */
-    -webkit-mask: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 110 110'%3E%3Cdefs%3E%3Cmask id='m'%3E%3Crect width='110' height='110' fill='white'/%3E%3Ctext x='55' y='68' font-family='Arial, Helvetica, sans-serif' font-weight='900' font-size='34' text-anchor='middle' letter-spacing='-1.5' fill='black'%3Ee621%3C/text%3E%3C/mask%3E%3C/defs%3E%3Cpolygon points='55,5 100,30 100,80 55,105 10,80 10,30' fill='black' mask='url(%23m)'/%3E%3C/svg%3E") no-repeat center;
-    mask: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 110 110'%3E%3Cdefs%3E%3Cmask id='m'%3E%3Crect width='110' height='110' fill='white'/%3E%3Ctext x='55' y='68' font-family='Arial, Helvetica, sans-serif' font-weight='900' font-size='34' text-anchor='middle' letter-spacing='-1.5' fill='black'%3Ee621%3C/text%3E%3C/mask%3E%3C/defs%3E%3Cpolygon points='55,5 100,30 100,80 55,105 10,80 10,30' fill='black' mask='url(%23m)'/%3E%3C/svg%3E") no-repeat center;
 }
