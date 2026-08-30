@@ -1,6 +1,4 @@
 // --- 1. YOUR ARTIST DATABASE ---
-// Add your artists here. The script expects the image inside the /images/ folder 
-// to match the exact name provided here (e.g., "KitsuneDraws.jpg"). 
 const artists = [
     {
         name: "Chronobyte",
@@ -22,13 +20,16 @@ const artists = [
     }
 ];
 
-// Map platforms to their FontAwesome icons and display names
+// Map platforms to their raw HTML icons and display names
 const platformMap = {
-    twitter: { icon: "fa-brands fa-x-twitter", label: "Twitter / X" },
-    bluesky: { icon: "fa-brands fa-bluesky", label: "Bluesky" },
-    pixiv:   { icon: "fa-solid fa-palette", label: "Pixiv" },
-    fa:      { icon: "fa-solid fa-paw", label: "FurAffinity" },
-    telegram:{ icon: "fa-brands fa-telegram", label: "Telegram" }
+    twitter: { iconHTML: '<i class="fa-brands fa-x-twitter"></i>', label: "Twitter / X" },
+    bluesky: { 
+        iconHTML: '<svg viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor"><path d="M111.8 62.2C170.2 105.9 233.3 194.7 256 242.4c22.7-47.7 85.8-136.5 144.2-180.2c41.6-31.6 108.3-48.2 111.8-6.1c.1 1.6 0 3.3 0 5c-5.1 82.6-23.7 190.5-28.7 212.1c-11.8 51.1-55.8 64.1-99.7 55.9c-32.6-6-77-23.3-106.9-37.1c89.4 59.8 82.5 138.2 13.3 172.7c-59.8 29.8-103.4-16-116.7-41.6c-10.4-20-16.6-58.1-16.6-58.1s-6.2 38.1-16.6 58.1c-13.3 25.6-56.9 71.4-116.7 41.6c-69.2-34.5-76.1-112.9 13.3-172.7c-29.9 13.8-74.3 31.1-106.9 37.1c-43.9 8.2-87.9-4.8-99.7-55.9c-5-21.6-23.6-129.5-28.7-212.1c0-1.7-.1-3.4 0-5c3.5-42.1 70.2-25.5 111.8 6.1z"/></svg>', 
+        label: "Bluesky" 
+    },
+    pixiv:   { iconHTML: '<i class="fa-solid fa-palette"></i>', label: "Pixiv" },
+    fa:      { iconHTML: '<i class="fa-solid fa-paw"></i>', label: "FurAffinity" },
+    e621:    { iconHTML: '<span class="e621-icon">e6</span>', label: "e621" }
 };
 
 // --- 2. RENDERING LOGIC ---
@@ -40,23 +41,21 @@ const closePanelBtn = document.getElementById('closePanel');
 const panelContent = document.getElementById('panelContent');
 
 function renderArtists(filterPlatform) {
-    grid.innerHTML = ""; // Clear grid
+    grid.innerHTML = ""; 
     
     artists.forEach(artist => {
-        // Check if artist matches the current filter
         if (filterPlatform !== "all" && !artist.socials[filterPlatform]) {
             return; 
         }
 
-        // Build the preview icons for the card
+        // Build the preview icons for the card (using iconHTML now)
         let previewIconsHTML = "";
         for (let platform in artist.socials) {
             if (platformMap[platform]) {
-                previewIconsHTML += `<i class="${platformMap[platform].icon}"></i>`;
+                previewIconsHTML += platformMap[platform].iconHTML;
             }
         }
 
-        // Create the card
         const card = document.createElement('div');
         card.className = "artist-card";
         card.innerHTML = `
@@ -64,7 +63,6 @@ function renderArtists(filterPlatform) {
             <div class="preview-icons">${previewIconsHTML}</div>
         `;
         
-        // Setup click event to open the panel
         card.addEventListener('click', () => openSidePanel(artist));
         grid.appendChild(card);
     });
@@ -73,41 +71,33 @@ function renderArtists(filterPlatform) {
 // --- 3. FILTER LOGIC ---
 filters.forEach(btn => {
     btn.addEventListener('click', (e) => {
-        // Remove active class from all buttons
         filters.forEach(b => b.classList.remove('active'));
-        // Add active class to clicked button
         e.currentTarget.classList.add('active');
-        
-        // Re-render
         renderArtists(e.currentTarget.dataset.platform);
     });
 });
 
 // --- 4. SLIDING PANEL LOGIC ---
 function openSidePanel(artist) {
-    // Generate the links HTML
     let linksHTML = "";
     for (let [platform, url] of Object.entries(artist.socials)) {
         if(platformMap[platform]) {
             linksHTML += `
                 <a href="${url}" target="_blank" class="social-link">
-                    <i class="${platformMap[platform].icon}"></i> 
+                    ${platformMap[platform].iconHTML} 
                     ${platformMap[platform].label}
                 </a>
             `;
         }
     }
 
-    // Combine Aliases
     const aliasesHTML = artist.aliases.length > 0 
         ? `<div class="aliases">Also known as: ${artist.aliases.join(', ')}</div>` 
         : "";
 
-    // Image path matching exact name (removes spaces just in case)
     const imgName = artist.name.replace(/\s+/g, '');
     const imgSrc = `images/${imgName}.${artist.imageExt || 'jpg'}`;
 
-    // Populate panel
     panelContent.innerHTML = `
         <img src="${imgSrc}" alt="${artist.name}" class="panel-image" onerror="this.src='https://via.placeholder.com/400x300?text=No+Image'">
         <h2 class="title-font">${artist.name}</h2>
@@ -117,7 +107,6 @@ function openSidePanel(artist) {
         </div>
     `;
 
-    // Slide in
     sidePanel.classList.add('open');
     panelOverlay.classList.add('active');
 }
@@ -130,5 +119,5 @@ function closeSidePanel() {
 closePanelBtn.addEventListener('click', closeSidePanel);
 panelOverlay.addEventListener('click', closeSidePanel);
 
-// Init rendering all on page load
+// Init
 renderArtists("all");
