@@ -52,8 +52,10 @@ header {
     cursor: pointer;
     font-size: 1.2rem;
     transition: 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
-
 .filter-btn:hover, .filter-btn.active {
     background: var(--accent);
     border-color: var(--accent);
@@ -90,6 +92,7 @@ header {
 .preview-icons {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     color: var(--text-muted);
     font-size: 1.1rem;
@@ -187,4 +190,16 @@ header {
 
 .filter-btn svg, .social-link svg, .preview-icons svg {
     vertical-align: -0.125em; /* Aligns the Bluesky SVG perfectly with text */
+}
+
+.icon-pixiv {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-color: currentColor;
+    /* Uses CSS Mask to render the official SVG while letting it change colors on hover! */
+    -webkit-mask: url('https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/pixiv.svg') no-repeat center;
+    mask: url('https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/pixiv.svg') no-repeat center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
 }
