@@ -91,11 +91,15 @@ header p {
     justify-content: center;
 }
 
-.filter-btn svg {
+/* Updated to support FontAwesome <i> cleanly scaling alongside SVGs! */
+.filter-btn svg, .filter-btn i {
     width: 22px;
     height: 22px;
+    font-size: 22px;
     fill: currentColor;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .filter-btn:hover {
@@ -161,11 +165,14 @@ header p {
     justify-content: center;
 }
 
-.icon-wrap svg {
+.icon-wrap svg, .icon-wrap i {
     width: 20px;
     height: 20px;
+    font-size: 20px;
     fill: currentColor;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ============================================================
@@ -254,7 +261,7 @@ header p {
     border: 1px solid #333;
 }
 
-.social-link .icon-wrap svg {
+.social-link .icon-wrap svg, .social-link .icon-wrap i {
     width: 22px;
     height: 22px;
 }
