@@ -22,12 +22,9 @@ const artists = [
 
 // Map platforms to their raw HTML icons and display names
 const platformMap = {
-    fa:      { iconHTML: '<i class="fa-solid fa-paw"></i>', label: "FurAffinity" },
-    e621:    { iconHTML: '<span style="font-family: sans-serif; font-weight: 900; font-size: 0.75em;">e621</span>', label: "e621" },
-    bluesky: { 
-        iconHTML: '<svg viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor"><path d="M111.8 62.2C170.2 105.9 233.3 194.7 256 242.4c22.7-47.7 85.8-136.5 144.2-180.2c41.6-31.6 108.3-48.2 111.8-6.1c.1 1.6 0 3.3 0 5c-5.1 82.6-23.7 190.5-28.7 212.1c-11.8 51.1-55.8 64.1-99.7 55.9c-32.6-6-77-23.3-106.9-37.1c89.4 59.8 82.5 138.2 13.3 172.7c-59.8 29.8-103.4-16-116.7-41.6c-10.4-20-16.6-58.1-16.6-58.1s-6.2 38.1-16.6 58.1c-13.3 25.6-56.9 71.4-116.7 41.6c-69.2-34.5-76.1-112.9 13.3-172.7c-29.9 13.8-74.3 31.1-106.9 37.1c-43.9 8.2-87.9-4.8-99.7-55.9c-5-21.6-23.6-129.5-28.7-212.1c0-1.7-.1-3.4 0-5c3.5-42.1 70.2-25.5 111.8 6.1z"/></svg>', 
-        label: "Bluesky" 
-    },
+    fa:      { iconHTML: '<span class="icon-fa"></span>', label: "FurAffinity" },
+    e621:    { iconHTML: '<span class="icon-e621"></span>', label: "e621" },
+    bluesky: { iconHTML: '<span class="icon-bluesky"></span>', label: "Bluesky" },
     twitter: { iconHTML: '<i class="fa-brands fa-twitter"></i>', label: "Twitter" },
     pixiv:   { iconHTML: '<span class="icon-pixiv"></span>', label: "Pixiv" }
 };
