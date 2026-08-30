@@ -181,25 +181,47 @@ header {
 }
 
 /* --- CUSTOM ICON STYLES --- */
-.e621-icon {
-    font-family: sans-serif;
-    font-weight: 900;
-    font-size: 0.9em;
-    letter-spacing: -0.5px;
-}
-
 .filter-btn svg, .social-link svg, .preview-icons svg {
     vertical-align: -0.125em; /* Aligns the Bluesky SVG perfectly with text */
 }
 
-.icon-pixiv {
+/* --- OFFICIAL PLATFORM ICONS (CSS MASK TRICK) --- */
+/* This ensures all icons align perfectly with standard FontAwesome icons */
+.icon-fa, .icon-bluesky, .icon-pixiv, .icon-e621 {
     display: inline-block;
     width: 1em;
     height: 1em;
     background-color: currentColor;
-    /* Uses CSS Mask to render the official SVG while letting it change colors on hover! */
-    -webkit-mask: url('https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/pixiv.svg') no-repeat center;
-    mask: url('https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/pixiv.svg') no-repeat center;
+    vertical-align: -0.125em; 
     -webkit-mask-size: contain;
     mask-size: contain;
+}
+
+/* FurAffinity: Official Tilted Paw */
+.icon-fa {
+    width: 1.1em; /* FA paw is slightly wider */
+    -webkit-mask: url('https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/furaffinity.svg') no-repeat center;
+    mask: url('https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/furaffinity.svg') no-repeat center;
+}
+
+/* Bluesky: Official Centered Butterfly */
+.icon-bluesky {
+    -webkit-mask: url('https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/bluesky.svg') no-repeat center;
+    mask: url('https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/bluesky.svg') no-repeat center;
+}
+
+/* Pixiv: Official Logo */
+.icon-pixiv {
+    -webkit-mask: url('https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/pixiv.svg') no-repeat center;
+    mask: url('https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/pixiv.svg') no-repeat center;
+}
+
+/* e621: Custom Hexagon Cutout Logo */
+.icon-e621 {
+    width: 1.15em;
+    height: 1.15em;
+    vertical-align: -0.2em;
+    /* Generates an SVG Hexagon with e621 cut out of the middle! */
+    -webkit-mask: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 110 110'%3E%3Cdefs%3E%3Cmask id='m'%3E%3Crect width='110' height='110' fill='white'/%3E%3Ctext x='55' y='68' font-family='Arial, Helvetica, sans-serif' font-weight='900' font-size='34' text-anchor='middle' letter-spacing='-1.5' fill='black'%3Ee621%3C/text%3E%3C/mask%3E%3C/defs%3E%3Cpolygon points='55,5 100,30 100,80 55,105 10,80 10,30' fill='black' mask='url(%23m)'/%3E%3C/svg%3E") no-repeat center;
+    mask: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 110 110'%3E%3Cdefs%3E%3Cmask id='m'%3E%3Crect width='110' height='110' fill='white'/%3E%3Ctext x='55' y='68' font-family='Arial, Helvetica, sans-serif' font-weight='900' font-size='34' text-anchor='middle' letter-spacing='-1.5' fill='black'%3Ee621%3C/text%3E%3C/mask%3E%3C/defs%3E%3Cpolygon points='55,5 100,30 100,80 55,105 10,80 10,30' fill='black' mask='url(%23m)'/%3E%3C/svg%3E") no-repeat center;
 }
