@@ -256,5 +256,45 @@ const artists = [
         socials: {
             e621: "https://e621.net/artists/57174"
         }
+    },
+    {
+        name: "Glass0milk",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            e621: "https://e621.net/artists/54808"
+        }
+    },
+    {
+        name: "SkunkJunkie",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            e621: "https://e621.net/artists/18871"
+        }
+    },
+    {
+        name: "Torakuta",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            e621: "https://e621.net/artists/20539"
+        }
+    },
+    {
+        name: "DanyRedLion",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            e621: "https://e621.net/artists/92618"
+        }
+    },
+    {
+        name: "RictheCusco",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            e621: "https://e621.net/artists/61848"
+        }
     }
 ];
