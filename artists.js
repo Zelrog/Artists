@@ -371,8 +371,8 @@ const artists = [
         }
     },
     {
-        name: "Ander the Salamander",
-        aliases: ["Srirachamander"],
+        name: "Monty",
+        aliases: ["Srirachamander", "Ander the Salamander"],
         imageExt: "png", 
         info: "",
         socials: {
