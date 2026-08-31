@@ -407,8 +407,8 @@ const artists = [
         }
     },
     {
-        name: "AaalexOrca",
-        aliases: [],
+        name: "Aaalex",
+        aliases: ["AaalexOrca"],
         imageExt: "png", 
         info: "",
         socials: {
