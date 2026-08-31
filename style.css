@@ -1,299 +1,131 @@
-/* ============================================================
-   1. FONTS & ROOT VARIABLES
-   ============================================================ */
-@font-face {
-    font-family: 'PrimaryFont';
-    src: url('fonts/Winner-Sans.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'SecondaryFont';
-    src: url('fonts/Back-Issues.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'UIFont';
-    src: url('fonts/Winner-Sans.ttf') format('truetype');
-}
-
-:root {
-    --bg-color: #121212;
-    --card-bg: #1e1e1e;
-    --card-hover: #262626;
-    --text-main: #f0f0f0;
-    --text-muted: #a0a0a0;
-    --accent: #C8143C;
-    --accent-hover: #A02844;
-}
-
-/* ============================================================
-   2. GLOBAL STYLES
-   ============================================================ */
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--bg-color);
-    color: var(--text-main);
-    font-family: 'SecondaryFont', sans-serif;
-    min-height: 100vh;
-}
-
-h1, h2, h3 { 
-    font-family: 'PrimaryFont', sans-serif; 
-    letter-spacing: 0.5px;
-}
-
-button { 
-    font-family: 'UIFont', sans-serif; 
-}
-
+/* Update your existing header rule to include 'position: relative' */
 header {
+    position: relative;
     text-align: center;
     padding: 2.5rem 1rem 2rem;
     border-bottom: 1px solid #2a2a2a;
 }
 
-header h1 {
-    font-size: 2.4rem;
-    margin: 0 0 0.5rem 0;
-}
-
-header p {
-    color: var(--text-muted);
-    font-size: 1.2rem;
-    margin: 0 0 1.5rem 0;
-}
-
 /* ============================================================
-   3. FILTER BUTTONS (NEAT & UNIFORM)
+   7. NEW FEATURES: Logo, Top Nav Buttons, & Alternate Links
    ============================================================ */
-.filters {
+   
+/* Header Top Bar Wrapper */
+.header-top-bar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 25px;
+    box-sizing: border-box;
+    pointer-events: none; /* Allows clicks to pass through empty space */
+}
+
+.header-top-bar > * {
+    pointer-events: auto; /* Re-enables clicking on the buttons/logo */
+}
+
+/* Logo Setup */
+.custom-logo {
+    width: 65px;
+    height: 65px;
+    color: #2E2830;
+}
+
+/* Glitch Animation */
+.glitch-icon {
+    animation: Twitch 2.5s infinite;
+}
+
+@keyframes Twitch {
+    0%, 70%, 100% {
+        transform: translate(0, 0) skew(0deg);
+        filter: drop-shadow(0 0 0 transparent);
+    }
+    72% {
+        transform: translate(-4px, 1px) skew(-6deg);
+        filter: drop-shadow(-4px 0 0 #00ffff) drop-shadow(4px 0 0 #ff0055);
+    }
+    75% {
+        transform: translate(3px, -2px) skew(4deg);
+        filter: drop-shadow(3px -1px 0 #00ffff) drop-shadow(-3px 1px 0 #ff0055);
+    }
+    78% {
+        transform: translate(-2px, 2px) skew(-2deg);
+        filter: drop-shadow(0 0 12px var(--accent));
+    }
+    81% {
+        transform: translate(4px, -1px) skew(7deg);
+        filter: drop-shadow(-3px 0 0 #00ffff) drop-shadow(3px 0 0 #ff0055);
+    }
+    84% {
+        transform: translate(0, 0) skew(0deg);
+        filter: drop-shadow(0 0 0 transparent);
+    }
+}
+
+/* Top Right Nav Links */
+.top-nav {
+    display: flex;
     gap: 12px;
 }
 
-.filter-btn {
+.nav-btn {
     background: var(--card-bg);
     color: var(--text-main);
     border: 2px solid #333;
-    min-width: 48px;
-    height: 48px;
-    padding: 0 16px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 1.2rem;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'UIFont', sans-serif;
+    font-size: 1rem;
     font-weight: bold;
     transition: all 0.2s ease;
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    gap: 8px;
 }
 
-.filter-btn svg, .filter-btn i {
-    width: 22px;
-    height: 22px;
-    font-size: 22px;
-    fill: currentColor;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.filter-btn:hover {
+.nav-btn:hover {
     background: var(--card-hover);
-    border-color: #444;
+    border-color: var(--accent);
+    color: #fff;
     transform: translateY(-2px);
 }
 
-.filter-btn.active {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: #fff;
-    box-shadow: 0 4px 12px rgba(200, 20, 60, 0.4);
+/* Alternate Accounts styling in Side Panel */
+.alt-divider {
+    border: 0;
+    height: 1px;
+    background: #333;
+    margin: 24px 0 16px 0;
 }
 
-/* ============================================================
-   4. ARTIST GRID & CARDS
-   ============================================================ */
-.artist-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 22px;
-    padding: 2.5rem 1.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.artist-card {
-    background: var(--card-bg);
-    border-radius: 14px;
-    padding: 24px 16px;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.2s cubic-bezier(0.25, 0.8, 0.25, 1), 
-                box-shadow 0.2s ease, 
-                border-color 0.2s ease;
-    border: 1px solid #2e2e2e;
-}
-
-.artist-card:hover {
-    transform: translateY(-6px);
-    background: var(--card-hover);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
-    border-color: var(--accent);
-}
-
-.artist-card h3 { 
+.alt-title {
+    font-size: 1.1rem;
+    color: var(--text-muted);
     margin: 0 0 12px 0;
-    font-size: 1.3rem;
+    font-family: 'PrimaryFont', sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
-.preview-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    color: var(--text-muted);
-}
-
-.icon-wrap {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.icon-wrap svg, .icon-wrap i {
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
-    fill: currentColor;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* ============================================================
-   5. SLIDING SIDE PANEL
-   ============================================================ */
-.side-panel {
-    position: fixed;
-    top: 0;
-    right: -450px;
-    width: 420px;
-    max-width: 90vw;
-    height: 100vh;
-    background: #181818;
-    box-shadow: -6px 0 25px rgba(0, 0, 0, 0.85);
-    transition: right 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
-    z-index: 1000;
-    overflow-y: auto;
-    border-left: 2px solid var(--accent);
-}
-
-.side-panel.open {
-    right: 0;
-}
-
-.close-btn {
-    position: absolute;
-    top: 14px;
-    left: 16px;
-    background: transparent;
-    border: none;
-    color: var(--text-muted);
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 8px;
-    transition: all 0.2s ease;
-    z-index: 10;
-}
-
-.close-btn:hover { 
-    color: #C8143C; 
-    background: rgba(160, 40, 68, 0.2);
-}
-
-.panel-content { 
-    padding: 64px 24px 30px;
-}
-
-.panel-image {
-    width: 100%;
-    max-height: 340px;
-    border-radius: 12px;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: 1px solid #333;
-}
-
-.aliases {
-    color: var(--text-muted);
-    font-style: italic;
-    font-size: 0.95rem;
-    margin-bottom: 24px;
-}
-
-.social-links {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.social-link {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    padding: 14px 18px;
-    background: #242424;
-    color: var(--text-main);
-    text-decoration: none;
-    border-radius: 10px;
-    font-size: 1.05rem;
-    font-weight: 500;
-    transition: all 0.2s ease;
-    border: 1px solid #333;
-}
-
-.social-link .icon-wrap svg, .social-link .icon-wrap i {
-    width: 22px;
-    height: 22px;
-}
-
-.social-link:hover { 
-    background: var(--accent); 
-    border-color: var(--accent);
-    color: #fff;
-    transform: translateX(4px);
-}
-
-/* ============================================================
-   6. PANEL OVERLAY
-   ============================================================ */
-.panel-overlay {
-    position: fixed;
-    top: 0; 
-    left: 0; 
-    width: 100vw; 
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(2px);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.35s ease;
-    z-index: 999;
-}
-
-.panel-overlay.active {
-    opacity: 1;
-    pointer-events: all;
+/* Responsive constraints so Header acts nicely on phones */
+@media (max-width: 768px) {
+    .header-top-bar {
+        position: relative;
+        padding: 10px 15px 20px 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    header {
+        padding-top: 1rem;
+    }
+    .top-nav {
+        width: 100%;
+        justify-content: center;
+    }
 }
