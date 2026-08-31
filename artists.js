@@ -552,15 +552,6 @@ const artists = [
         }
     },
     {
-        name: "Concupisco",
-        aliases: ["Aeria Quies"],
-        imageExt: "png", 
-        info: "",
-        socials: {
-            fa: "https://www.furaffinity.net/user/concupisco/"
-        }
-    },
-    {
         name: "ArchiBlender",
         aliases: [],
         imageExt: "png", 
