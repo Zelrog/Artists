@@ -12,13 +12,13 @@
 }
 
 :root {
-    --bg-color: #121212;
-    --card-bg: #1e1e1e;
-    --card-hover: #262626;
-    --text-main: #f0f0f0;
+    --bg-color: #14181C;
+    --card-bg: #14181C;
+    --card-hover: #504044;
+    --text-main: #F8F0F4;
     --text-muted: #a0a0a0;
-    --accent: #5865F2;
-    --accent-hover: #4752c4;
+    --accent: #C8143C;
+    --accent-hover: #78283C;
 }
 
 /* ============================================================
