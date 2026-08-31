@@ -36,7 +36,12 @@ function renderArtists(filterPlatform = "all") {
         return;
     }
 
-    artists.forEach(artist => {
+    // Create a sorted copy of the artists array alphabetically by name
+    const sortedArtists = [...artists].sort((a, b) => 
+        a.name.localeCompare(b.name, undefined, { sensitivity: 'base' })
+    );
+
+    sortedArtists.forEach(artist => {
         if (filterPlatform !== "all" && !artist.socials[filterPlatform]) {
             return; 
         }
