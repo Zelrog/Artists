@@ -387,10 +387,11 @@ const artists = [
     },
     {
         name: "DippuBear",
-        aliases: [],
+        aliases: ["Dip", "BreadStick"],
         imageExt: "png", 
         socials: {
-            bluesky: "https://bsky.app/profile/dippu.bsky.social"
+            bluesky: "https://bsky.app/profile/dippu.bsky.social",
+            fa: "https://www.furaffinity.net/user/-breadstick-/",
         }
     },
     {
@@ -487,6 +488,262 @@ const artists = [
         imageExt: "png", 
         socials: {
             bluesky: "https://bsky.app/profile/stranj.bsky.social"
+        }
+    },
+    {
+        name: "Etness",
+        aliases: ["Et"],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/-et/"
+        }
+    },
+    {
+        name: "NoPetrol",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/absolutelynopetrol/"
+        }
+    },
+    {
+        name: "Adios",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/adios/"
+        }
+    },
+    {
+        name: "Concupisco",
+        aliases: ["Aeria Quies"],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/concupisco/"
+        }
+    },
+    {
+        name: "AmWulf",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/amwulf/"
+        }
+    },
+    {
+        name: "AnalogVorer",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/analogvorer/"
+        }
+    },
+    {
+        name: "ArchiBlender",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/archiblender/"
+        }
+    },
+    {
+        name: "KronexFire",
+        aliases: ["Ares"],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/-kronexfire-/"
+        }
+    },
+    {
+        name: "Astral-Messenger",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/astral-messenger/"
+        }
+    },
+    {
+        name: "AStrayD0g",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/astrayd0g/"
+        }
+    },
+    {
+        name: "Nosoyunoso",
+        aliases: ["BearsBears"],
+        imageExt: "png", 
+        socials: {
+            bluesky: "https://bsky.app/profile/nosoyunoso.bsky.social"
+        }
+    },
+    {
+        name: "BerchBork",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/berchbork/"
+        }
+    },
+    {
+        name: "BernGruff",
+        aliases: ["Cadejoconsumac"],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/cadejoconsumac/"
+        }
+    },
+    {
+        name: "Bernie-P",
+        aliases: ["Spazz-Bear"],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/bernie-p/"
+        }
+    },
+    {
+        name: "Bin",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/bin/"
+        }
+    },
+    {
+        name: "Cathricorn",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/cathricorn/"
+        }
+    },
+    {
+        name: "Chocolate And Milk",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/chocolateandmilk/"
+        }
+    },
+    {
+        name: "Crimetxt",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/crimetxt/"
+        }
+    },
+    {
+        name: "Dangpa",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/dangpa/"
+        }
+    },
+    {
+        name: "Dergum",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/dergum/"
+        }
+    },
+    {
+        name: "Izrez",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/izrez/"
+        }
+    },
+    {
+        name: "Fiaskko",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/fiaskko/"
+        }
+    },
+    {
+        name: "Jamzenn",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/jamzenn/"
+        }
+    },
+    {
+        name: "MineDoo",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/minedoo/"
+        }
+    },
+    {
+        name: "OldGreg",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/oldgreg/"
+        }
+    },
+    {
+        name: "Rool",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/rool/"
+        }
+    },
+    {
+        name: "Spyz",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/spyz/"
+        }
+    },
+    {
+        name: "Tobiscut",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/tobiscut/"
+        }
+    },
+    {
+        name: "Stasstoz",
+        aliases: ["Toz"],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/stasstoz/"
+        }
+    },
+    {
+        name: "Wolfsl",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            fa: "https://www.furaffinity.net/user/wolfsl/"
+        }
+    },
+    {
+        name: "Xeoniios",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            e621: "https://e621.net/artists/67657"
+        }
+    },
+    {
+        name: "Zandermanith",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            e621: "https://e621.net/artists/43540"
         }
     }
 ];
