@@ -317,15 +317,6 @@ const artists = [
         }
     },
     {
-        name: "DanyRedLion",
-        aliases: [],
-        imageExt: "png", 
-        info: "",
-        socials: {
-            e621: "https://e621.net/artists/92618"
-        }
-    },
-    {
         name: "RictheCusco",
         aliases: [],
         imageExt: "png", 
@@ -552,30 +543,12 @@ const artists = [
         }
     },
     {
-        name: "Etness",
-        aliases: ["Et"],
-        imageExt: "png", 
-        info: "",
-        socials: {
-            fa: "https://www.furaffinity.net/user/-et/"
-        }
-    },
-    {
         name: "NoPetrol",
         aliases: [],
         imageExt: "png", 
         info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/absolutelynopetrol/"
-        }
-    },
-    {
-        name: "Adios",
-        aliases: [],
-        imageExt: "png", 
-        info: "",
-        socials: {
-            fa: "https://www.furaffinity.net/user/adios/"
         }
     },
     {
@@ -588,24 +561,6 @@ const artists = [
         }
     },
     {
-        name: "AmWulf",
-        aliases: [],
-        imageExt: "png", 
-        info: "",
-        socials: {
-            fa: "https://www.furaffinity.net/user/amwulf/"
-        }
-    },
-    {
-        name: "AnalogVorer",
-        aliases: [],
-        imageExt: "png", 
-        info: "",
-        socials: {
-            fa: "https://www.furaffinity.net/user/analogvorer/"
-        }
-    },
-    {
         name: "ArchiBlender",
         aliases: [],
         imageExt: "png", 
@@ -615,30 +570,12 @@ const artists = [
         }
     },
     {
-        name: "KronexFire",
-        aliases: ["Ares"],
-        imageExt: "png", 
-        info: "",
-        socials: {
-            fa: "https://www.furaffinity.net/user/-kronexfire-/"
-        }
-    },
-    {
         name: "Astral-Messenger",
         aliases: [],
         imageExt: "png", 
         info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/astral-messenger/"
-        }
-    },
-    {
-        name: "AStrayD0g",
-        aliases: [],
-        imageExt: "png", 
-        info: "",
-        socials: {
-            fa: "https://www.furaffinity.net/user/astrayd0g/"
         }
     },
     {
@@ -660,39 +597,12 @@ const artists = [
         }
     },
     {
-        name: "BernGruff",
-        aliases: ["Cadejoconsumac"],
-        imageExt: "png", 
-        info: "",
-        socials: {
-            fa: "https://www.furaffinity.net/user/cadejoconsumac/"
-        }
-    },
-    {
-        name: "Bernie-P",
-        aliases: ["Spazz-Bear"],
-        imageExt: "png", 
-        info: "",
-        socials: {
-            fa: "https://www.furaffinity.net/user/bernie-p/"
-        }
-    },
-    {
         name: "Bin",
         aliases: [],
         imageExt: "png", 
         info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/bin/"
-        }
-    },
-    {
-        name: "Cathricorn",
-        aliases: [],
-        imageExt: "png", 
-        info: "",
-        socials: {
-            fa: "https://www.furaffinity.net/user/cathricorn/"
         }
     },
     {
@@ -783,15 +693,6 @@ const artists = [
         info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/rool/"
-        }
-    },
-    {
-        name: "Spyz",
-        aliases: [],
-        imageExt: "png", 
-        info: "",
-        socials: {
-            fa: "https://www.furaffinity.net/user/spyz/"
         }
     },
     {
