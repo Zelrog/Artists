@@ -77,10 +77,8 @@ function openSidePanel(artist) {
     let mainLinksHTML = "";
     let altLinksHTML = "";
 
-    // Parse Socials Array for potential Alternative links
     for (let [platform, urlData] of Object.entries(artist.socials)) {
         if (platformMap[platform]) {
-            // Converts standard string URLs into an array to process everything uniformly
             const urls = Array.isArray(urlData) ? urlData : [urlData];
             
             urls.forEach((url, index) => {
@@ -108,10 +106,6 @@ function openSidePanel(artist) {
     const imgName = artist.name.replace(/\s+/g, '');
     const imgSrc = `images/${imgName}.${artist.imageExt || 'png'}`;
 
-    // Elegant clean fallback Rat Icon base64 SVG
-    const fallbackRatSVG = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBmaWxsPSIjYTBhMGEwIj48cGF0aCBkPSJNMzQyLjYgNDMuNGMtMjMuNi0yOS4xLTYwLjEtNDguNS05OC45LTUzYy00Ni4zLTUuNC05MSAxMy4xLTExOS43IDQ5LjZDOTMuOCA3NyA4Ny4yIDEyMi4zIDEwNi4xIDE2My4xbDQzLjkgMTAzLjFjMTYuNyAzOS40IDQ3LjIgNzMuMSA4Ni41IDk1LjNsMTEwLjMgNjEuM2MzMy41IDE4LjYgNzIuNyAxOS44IDEwNi41IDMuNWw0NS40LTIxLjhjMzQuOS0xNi43IDU5LjctNTEgNjQuOS05MC4xbDYuMy00Ny43YzMuNy0yNy44LTQuNi01NS45LTIzLjMtNzQuOWwtNjMuNS02NC40Yy0xNS41LTE1LjctMzYuMS0yNS42LTU4LjItMjcuOGwtNTEtNS4xYy0xMC41LTEtMTkuMi04LjgtMjEuMi0xOS4ybC0yLjUtMTEuN2MtMi05LjcgMy44LTE5LjIgMTMuMS0yMi4xbDQxLjYtMTIuOWMxMi45LTQgMjItMTQuOSAyMy41LTI4LjRzLTYtMjYuNS0xOC40LTMzLjZsLTc1LjMtNDMuMnpNMTIuNCA0MzguMWMtOS41IDEwLjEtMTMuNCAyNC45LTEwLjEgMzkuMXMxNiAyNS4xIDI5LjgtMjguMmwxMDUuMyAyMy40YzE0LjcgMy4zIDI5LjgtMS42IDM5LjUtMTIuNWw0NC42LTUwLjdjLTE4LTExLjMtMzQuOS0yNC42LTQ5LjktMzkuN0wxMi40IDQzOC4xeiIvPjwvc3ZnPg==";
-
-    // Check if there's any content for alternative links before attaching it
     let alternateSection = "";
     if (altLinksHTML !== "") {
         alternateSection = `
@@ -123,8 +117,11 @@ function openSidePanel(artist) {
         `;
     }
 
+    // Safely replace the image with a styled Rat emoji div if it fails to load
+    const fallbackHTML = `<div class=&quot;panel-image fallback-rat&quot;>🐀</div>`;
+
     panelContent.innerHTML = `
-        <img src="${imgSrc}" alt="${artist.name}" class="panel-image" onerror="this.onerror=null;this.src='${fallbackRatSVG}';">
+        <img src="${imgSrc}" alt="${artist.name}" class="panel-image" onerror="this.outerHTML='${fallbackHTML}';">
         <h2 class="title-font">${artist.name}</h2>
         ${aliasesHTML}
         <div class="social-links">
