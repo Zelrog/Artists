@@ -20,8 +20,8 @@
     --card-hover: #262626;
     --text-main: #f0f0f0;
     --text-muted: #a0a0a0;
-    --accent: #5865F2;
-    --accent-hover: #4752c4;
+    --accent: #C8143C;
+    --accent-hover: #A02844;
 }
 
 /* ============================================================
@@ -62,7 +62,7 @@ header h1 {
 
 header p {
     color: var(--text-muted);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin: 0 0 1.5rem 0;
 }
 
@@ -86,7 +86,7 @@ header p {
     padding: 0 16px;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     transition: all 0.2s ease;
     display: inline-flex;
@@ -114,7 +114,7 @@ header p {
     background: var(--accent);
     border-color: var(--accent);
     color: #fff;
-    box-shadow: 0 4px 12px rgba(88, 101, 242, 0.35);
+    box-shadow: 0 4px 12px rgba(200, 20, 60, 0.4);
 }
 
 /* ============================================================
@@ -213,18 +213,18 @@ header p {
     justify-content: center;
     width: 36px;
     height: 36px;
-    border-radius: 8px; /* Squarish hover box */
+    border-radius: 8px;
     transition: all 0.2s ease;
     z-index: 10;
 }
 
 .close-btn:hover { 
-    color: #ff5555; 
-    background: rgba(255, 85, 85, 0.12);
+    color: #C8143C; 
+    background: rgba(160, 40, 68, 0.2);
 }
 
 .panel-content { 
-    padding: 64px 24px 30px; /* Increased top padding to 64px for clean spacing above the image */
+    padding: 64px 24px 30px;
 }
 
 .panel-image {
