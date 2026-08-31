@@ -36,7 +36,6 @@ function renderArtists(filterPlatform = "all") {
         return;
     }
 
-    // Create a sorted copy of the artists array alphabetically by name
     const sortedArtists = [...artists].sort((a, b) => 
         a.name.localeCompare(b.name, undefined, { sensitivity: 'base' })
     );
@@ -75,15 +74,30 @@ filters.forEach(btn => {
 });
 
 function openSidePanel(artist) {
-    let linksHTML = "";
-    for (let [platform, url] of Object.entries(artist.socials)) {
+    let mainLinksHTML = "";
+    let altLinksHTML = "";
+
+    // Parse Socials Array for potential Alternative links
+    for (let [platform, urlData] of Object.entries(artist.socials)) {
         if (platformMap[platform]) {
-            linksHTML += `
-                <a href="${url}" target="_blank" rel="noopener noreferrer" class="social-link">
-                    <span class="icon-wrap">${platformMap[platform].iconHTML}</span> 
-                    <span>${platformMap[platform].label}</span>
-                </a>
-            `;
+            // Converts standard string URLs into an array to process everything uniformly
+            const urls = Array.isArray(urlData) ? urlData : [urlData];
+            
+            urls.forEach((url, index) => {
+                const label = index === 0 ? platformMap[platform].label : `${platformMap[platform].label} (Alt)`;
+                const linkHTML = `
+                    <a href="${url}" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <span class="icon-wrap">${platformMap[platform].iconHTML}</span> 
+                        <span>${label}</span>
+                    </a>
+                `;
+                
+                if (index === 0) {
+                    mainLinksHTML += linkHTML;
+                } else {
+                    altLinksHTML += linkHTML;
+                }
+            });
         }
     }
 
@@ -94,13 +108,29 @@ function openSidePanel(artist) {
     const imgName = artist.name.replace(/\s+/g, '');
     const imgSrc = `images/${imgName}.${artist.imageExt || 'png'}`;
 
+    // Elegant clean fallback Rat Icon base64 SVG
+    const fallbackRatSVG = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBmaWxsPSIjYTBhMGEwIj48cGF0aCBkPSJNMzQyLjYgNDMuNGMtMjMuNi0yOS4xLTYwLjEtNDguNS05OC45LTUzYy00Ni4zLTUuNC05MSAxMy4xLTExOS43IDQ5LjZDOTMuOCA3NyA4Ny4yIDEyMi4zIDEwNi4xIDE2My4xbDQzLjkgMTAzLjFjMTYuNyAzOS40IDQ3LjIgNzMuMSA4Ni41IDk1LjNsMTEwLjMgNjEuM2MzMy41IDE4LjYgNzIuNyAxOS44IDEwNi41IDMuNWw0NS40LTIxLjhjMzQuOS0xNi43IDU5LjctNTEgNjQuOS05MC4xbDYuMy00Ny43YzMuNy0yNy44LTQuNi01NS45LTIzLjMtNzQuOWwtNjMuNS02NC40Yy0xNS41LTE1LjctMzYuMS0yNS42LTU4LjItMjcuOGwtNTEtNS4xYy0xMC41LTEtMTkuMi04LjgtMjEuMi0xOS4ybC0yLjUtMTEuN2MtMi05LjcgMy44LTE5LjIgMTMuMS0yMi4xbDQxLjYtMTIuOWMxMi45LTQgMjItMTQuOSAyMy41LTI4LjRzLTYtMjYuNS0xOC40LTMzLjZsLTc1LjMtNDMuMnpNMTIuNCA0MzguMWMtOS41IDEwLjEtMTMuNCAyNC45LTEwLjEgMzkuMXMxNiAyNS4xIDI5LjcgMjguMmwxMDUuMyAyMy40YzE0LjcgMy4zIDI5LjgtMS42IDM5LjUtMTIuNWw0NC42LTUwLjdjLTE4LTExLjMtMzQuOS0yNC42LTQ5LjktMzkuN0wxMi40IDQzOC4xeiIvPjwvc3ZnPg==";
+
+    // Check if there's any content for alternative links before attaching it
+    let alternateSection = "";
+    if (altLinksHTML !== "") {
+        alternateSection = `
+            <hr class="alt-divider">
+            <h3 class="alt-title">Alternate Accounts:</h3>
+            <div class="social-links">
+                ${altLinksHTML}
+            </div>
+        `;
+    }
+
     panelContent.innerHTML = `
-        <img src="${imgSrc}" alt="${artist.name}" class="panel-image" onerror="this.src='https://via.placeholder.com/400x300?text=No+Image'">
+        <img src="${imgSrc}" alt="${artist.name}" class="panel-image" onerror="this.onerror=null;this.src='${fallbackRatSVG}';">
         <h2 class="title-font">${artist.name}</h2>
         ${aliasesHTML}
         <div class="social-links">
-            ${linksHTML}
+            ${mainLinksHTML}
         </div>
+        ${alternateSection}
     `;
 
     sidePanel.classList.add('open');
