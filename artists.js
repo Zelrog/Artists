@@ -3,8 +3,9 @@ const artists = [
         name: "Chronobyte",
         aliases: ["Oekanuki"],
         imageExt: "png",
+        info: "Deserves some belly-rubs~\nWill burn in hell for 67 years..",
         socials: {
-            fa: "https://www.furaffinity.net/user/~chronobyte",
+            fa: ["https://www.furaffinity.net/user/~chronobyte", "https://www.furaffinity.net/user/kxe6"],
             bluesky: "https://bsky.app/profile/oekanuki.bsky.social",
             e621: "https://e621.net/artists/124125"
         }
@@ -13,6 +14,7 @@ const artists = [
         name: "Spex",
         aliases: ["Spectral-Bat", "Spectral-Rat"],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/11112"
         }
@@ -21,6 +23,7 @@ const artists = [
         name: "Galrock",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/26441"
         }
@@ -29,6 +32,7 @@ const artists = [
         name: "Danero",
         aliases: ["Ilmandi"],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/38954"
         }
@@ -37,6 +41,7 @@ const artists = [
         name: "Garn",
         aliases: ["Garnable"],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/102427"
         }
@@ -45,6 +50,7 @@ const artists = [
         name: "Demon Rat",
         aliases: ["Stupid Rat"],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/84318"
         }
@@ -53,6 +59,7 @@ const artists = [
         name: "Borges",
         aliases: ["Aoba"],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/124126"
         }
@@ -61,6 +68,7 @@ const artists = [
         name: "x6udpngx",
         aliases: ["pngx"],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/17515"
         }
@@ -69,6 +77,7 @@ const artists = [
         name: "contort desire",
         aliases: ["ftdire"],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/87531"
         }
@@ -77,6 +86,7 @@ const artists = [
         name: "SlugsDog",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/19265"
         }
@@ -85,6 +95,7 @@ const artists = [
         name: "Hoggan",
         aliases: ["Exoticd", "Barnyardhog "],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/104189"
         }
@@ -93,6 +104,7 @@ const artists = [
         name: "Kotori",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/4580"
         }
@@ -101,6 +113,7 @@ const artists = [
         name: "Cywolf49",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/64817"
         }
@@ -109,6 +122,7 @@ const artists = [
         name: "Dramamine",
         aliases: ["NightPhysics", "GorillaDrama"],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/829"
         }
@@ -117,6 +131,7 @@ const artists = [
         name: "HiddenRaptor",
         aliases: ["AnthroRaptor"],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/55773"
         }
@@ -125,6 +140,7 @@ const artists = [
         name: "Razzper",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/58183"
         }
@@ -133,6 +149,7 @@ const artists = [
         name: "RuffusBleu",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/79301"
         }
@@ -141,6 +158,7 @@ const artists = [
         name: "PoweredByGif",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/85673"
         }
@@ -149,6 +167,7 @@ const artists = [
         name: "AlexxFur2",
         aliases: ["quejumbrosoalex", "alexxelquejumbroso"],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/91940"
         }
@@ -157,6 +176,7 @@ const artists = [
         name: "Captain Nikko",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/11819"
         }
@@ -165,6 +185,7 @@ const artists = [
         name: "BowserBoy101",
         aliases: ["SobekDraws"],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/20115"
         }
@@ -173,6 +194,7 @@ const artists = [
         name: "PataDePerro",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/93597"
         }
@@ -181,6 +203,7 @@ const artists = [
         name: "Mestiso",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/32685"
         }
@@ -189,6 +212,7 @@ const artists = [
         name: "Ozadene",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/124127"
         }
@@ -197,6 +221,7 @@ const artists = [
         name: "Memburu",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/29108"
         }
@@ -205,6 +230,7 @@ const artists = [
         name: "Orf",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/25879"
         }
@@ -213,6 +239,7 @@ const artists = [
         name: "Lower",
         aliases: ["LowerKuo"],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/32351"
         }
@@ -221,6 +248,7 @@ const artists = [
         name: "YeenStank",
         aliases: ["Protheorem"],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/47583"
         }
@@ -229,6 +257,7 @@ const artists = [
         name: "CorvidTree",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/96992"
         }
@@ -237,6 +266,7 @@ const artists = [
         name: "Andrefil360",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/59896"
         }
@@ -245,6 +275,7 @@ const artists = [
         name: "Nanoff",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/31940"
         }
@@ -253,6 +284,7 @@ const artists = [
         name: "SpikySketches",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/57174"
         }
@@ -261,6 +293,7 @@ const artists = [
         name: "Glass0milk",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/54808"
         }
@@ -269,6 +302,7 @@ const artists = [
         name: "SkunkJunkie",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/18871"
         }
@@ -277,6 +311,7 @@ const artists = [
         name: "Torakuta",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/20539"
         }
@@ -285,6 +320,7 @@ const artists = [
         name: "DanyRedLion",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/92618"
         }
@@ -293,6 +329,7 @@ const artists = [
         name: "RictheCusco",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/61848"
         }
@@ -301,6 +338,7 @@ const artists = [
         name: "zne43",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             bluesky: "https://bsky.app/profile/zne43.bsky.social"
         }
@@ -309,6 +347,7 @@ const artists = [
         name: "Sidmon The Bear",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             bluesky: "https://bsky.app/profile/sidmonkodiakbear.bsky.social"
         }
@@ -317,6 +356,7 @@ const artists = [
         name: "NotSoPhatMatt",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             bluesky: "https://bsky.app/profile/notsophatmatt.bsky.social"
         }
@@ -325,6 +365,7 @@ const artists = [
         name: "WolfieHydro",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             bluesky: "https://bsky.app/profile/wolfiehydro.bsky.social"
         }
@@ -333,6 +374,7 @@ const artists = [
         name: "Horrorbuns",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             bluesky: "https://bsky.app/profile/horrorbuns.art"
         }
@@ -341,6 +383,7 @@ const artists = [
         name: "Ander the Salamander",
         aliases: ["Srirachamander"],
         imageExt: "png", 
+        info: "",
         socials: {
             bluesky: "https://bsky.app/profile/srirachamander.bsky.social"
         }
@@ -349,6 +392,7 @@ const artists = [
         name: "Spruceloops",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             bluesky: "https://bsky.app/profile/spruceloops.sheath.city"
         }
@@ -357,6 +401,7 @@ const artists = [
         name: "Y40ifan",
         aliases: ["Iggi"],
         imageExt: "png", 
+        info: "",
         socials: {
             bluesky: "https://bsky.app/profile/y40ifan.bsky.social"
         }
@@ -365,6 +410,7 @@ const artists = [
         name: "AaalexOrca",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             bluesky: "https://bsky.app/profile/aaalexorca.bsky.social"
         }
@@ -373,6 +419,7 @@ const artists = [
         name: "Dead Stray Bear",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             bluesky: "https://bsky.app/profile/deadstraybear.bsky.social"
         }
@@ -381,6 +428,7 @@ const artists = [
         name: "Delirost",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             bluesky: "https://bsky.app/profile/delirost.com"
         }
@@ -389,6 +437,7 @@ const artists = [
         name: "DippuBear",
         aliases: ["Dip", "BreadStick"],
         imageExt: "png", 
+        info: "",
         socials: {
             bluesky: "https://bsky.app/profile/dippu.bsky.social",
             fa: "https://www.furaffinity.net/user/-breadstick-/",
@@ -398,6 +447,7 @@ const artists = [
         name: "Minty",
         aliases: ["Mintyderg", "Chess"],
         imageExt: "png", 
+        info: "",
         socials: {
             bluesky: "https://bsky.app/profile/chessthecollie.bsky.social"
         }
@@ -406,6 +456,7 @@ const artists = [
         name: "StinkDyde",
         aliases: ["Dirty poss"],
         imageExt: "png", 
+        info: "",
         socials: {
             bluesky: "https://bsky.app/profile/stinkdyde.bsky.social"
         }
@@ -414,6 +465,7 @@ const artists = [
         name: "Beef",
         aliases: ["GhostlyBeef"],
         imageExt: "png", 
+        info: "",
         socials: {
             bluesky: "https://bsky.app/profile/ghostlybeef.bsky.social"
         }
@@ -422,6 +474,7 @@ const artists = [
         name: "WildDog",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             bluesky: "https://bsky.app/profile/ohmyrichard.bsky.social"
         }
@@ -430,6 +483,7 @@ const artists = [
         name: "RusBane",
         aliases: ["BearInBriefs"],
         imageExt: "png", 
+        info: "",
         socials: {
             bluesky: "https://bsky.app/profile/bearinbriefs.bsky.social"
         }
@@ -438,6 +492,7 @@ const artists = [
         name: "Haira",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             bluesky: "https://bsky.app/profile/twhaira.bsky.social"
         }
@@ -446,6 +501,7 @@ const artists = [
         name: "Tazork",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             bluesky: "https://bsky.app/profile/tazork.bsky.social"
         }
@@ -454,6 +510,7 @@ const artists = [
         name: "Vellum",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             bluesky: "https://bsky.app/profile/vellumartwork.bsky.social"
         }
@@ -462,6 +519,7 @@ const artists = [
         name: "CosmicTail",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             bluesky: "https://bsky.app/profile/cosmictail.bsky.social"
         }
@@ -470,6 +528,7 @@ const artists = [
         name: "TropicalSleet",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             bluesky: "https://bsky.app/profile/alleycatsleet.bsky.social"
         }
@@ -478,6 +537,7 @@ const artists = [
         name: "BorizBooh",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             bluesky: "https://bsky.app/profile/borizbooh.bsky.social"
         }
@@ -486,6 +546,7 @@ const artists = [
         name: "Strange-Fox",
         aliases: ["civetstranj"],
         imageExt: "png", 
+        info: "",
         socials: {
             bluesky: "https://bsky.app/profile/stranj.bsky.social"
         }
@@ -494,6 +555,7 @@ const artists = [
         name: "Etness",
         aliases: ["Et"],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/-et/"
         }
@@ -502,6 +564,7 @@ const artists = [
         name: "NoPetrol",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/absolutelynopetrol/"
         }
@@ -510,6 +573,7 @@ const artists = [
         name: "Adios",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/adios/"
         }
@@ -518,6 +582,7 @@ const artists = [
         name: "Concupisco",
         aliases: ["Aeria Quies"],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/concupisco/"
         }
@@ -526,6 +591,7 @@ const artists = [
         name: "AmWulf",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/amwulf/"
         }
@@ -534,6 +600,7 @@ const artists = [
         name: "AnalogVorer",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/analogvorer/"
         }
@@ -542,6 +609,7 @@ const artists = [
         name: "ArchiBlender",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/archiblender/"
         }
@@ -550,6 +618,7 @@ const artists = [
         name: "KronexFire",
         aliases: ["Ares"],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/-kronexfire-/"
         }
@@ -558,6 +627,7 @@ const artists = [
         name: "Astral-Messenger",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/astral-messenger/"
         }
@@ -566,6 +636,7 @@ const artists = [
         name: "AStrayD0g",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/astrayd0g/"
         }
@@ -574,6 +645,7 @@ const artists = [
         name: "Nosoyunoso",
         aliases: ["BearsBears"],
         imageExt: "png", 
+        info: "",
         socials: {
             bluesky: "https://bsky.app/profile/nosoyunoso.bsky.social"
         }
@@ -582,6 +654,7 @@ const artists = [
         name: "BerchBork",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/berchbork/"
         }
@@ -590,6 +663,7 @@ const artists = [
         name: "BernGruff",
         aliases: ["Cadejoconsumac"],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/cadejoconsumac/"
         }
@@ -598,6 +672,7 @@ const artists = [
         name: "Bernie-P",
         aliases: ["Spazz-Bear"],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/bernie-p/"
         }
@@ -606,6 +681,7 @@ const artists = [
         name: "Bin",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/bin/"
         }
@@ -614,6 +690,7 @@ const artists = [
         name: "Cathricorn",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/cathricorn/"
         }
@@ -622,6 +699,7 @@ const artists = [
         name: "Chocolate And Milk",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/chocolateandmilk/"
         }
@@ -630,6 +708,7 @@ const artists = [
         name: "Crimetxt",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/crimetxt/"
         }
@@ -638,6 +717,7 @@ const artists = [
         name: "Dangpa",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/dangpa/"
         }
@@ -646,6 +726,7 @@ const artists = [
         name: "Dergum",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/dergum/"
         }
@@ -654,6 +735,7 @@ const artists = [
         name: "Izrez",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/izrez/"
         }
@@ -662,6 +744,7 @@ const artists = [
         name: "Fiaskko",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/fiaskko/"
         }
@@ -670,6 +753,7 @@ const artists = [
         name: "Jamzenn",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/jamzenn/"
         }
@@ -678,6 +762,7 @@ const artists = [
         name: "MineDoo",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/minedoo/"
         }
@@ -686,6 +771,7 @@ const artists = [
         name: "OldGreg",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/oldgreg/"
         }
@@ -694,6 +780,7 @@ const artists = [
         name: "Rool",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/rool/"
         }
@@ -702,6 +789,7 @@ const artists = [
         name: "Spyz",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/spyz/"
         }
@@ -710,6 +798,7 @@ const artists = [
         name: "Tobiscut",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/tobiscut/"
         }
@@ -718,6 +807,7 @@ const artists = [
         name: "Stasstoz",
         aliases: ["Toz"],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/stasstoz/"
         }
@@ -726,6 +816,7 @@ const artists = [
         name: "Wolfsl",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/wolfsl/"
         }
@@ -734,6 +825,7 @@ const artists = [
         name: "Xeoniios",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/67657"
         }
@@ -742,6 +834,7 @@ const artists = [
         name: "Zandermanith",
         aliases: [],
         imageExt: "png", 
+        info: "",
         socials: {
             e621: "https://e621.net/artists/43540"
         }
