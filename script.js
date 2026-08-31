@@ -103,6 +103,11 @@ function openSidePanel(artist) {
         ? `<div class="aliases">Also known as: ${artist.aliases.join(', ')}</div>` 
         : "";
 
+    // Info section processing: Convert \n back into HTML line breaks
+    const infoHTML = artist.info 
+        ? `<div class="artist-info">${artist.info.replace(/\n/g, '<br>')}</div>`
+        : "";
+
     const imgName = artist.name.replace(/\s+/g, '');
     const imgSrc = `images/${imgName}.${artist.imageExt || 'png'}`;
 
@@ -124,6 +129,7 @@ function openSidePanel(artist) {
         <img src="${imgSrc}" alt="${artist.name}" class="panel-image" onerror="this.outerHTML='${fallbackHTML}';">
         <h2 class="title-font">${artist.name}</h2>
         ${aliasesHTML}
+        ${infoHTML}
         <div class="social-links">
             ${mainLinksHTML}
         </div>

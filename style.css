@@ -296,7 +296,7 @@ header p {
     border-radius: 12px;
     object-fit: cover;
     margin-bottom: 20px;
-    border: 1px solid #333;
+    border: 2px solid #C8143C;
 }
 
 /* Bulletproof fallback for missing artist images */
@@ -313,7 +313,19 @@ header p {
     color: var(--text-muted);
     font-style: italic;
     font-size: 0.95rem;
+    margin-bottom: 16px; 
+}
+
+/* The redesigned Info block */
+.artist-info {
+    color: #e0e0e0;
+    font-size: 0.95rem;
+    line-height: 1.6;
     margin-bottom: 24px;
+    background: #1e1e1e;
+    padding: 16px;
+    border-radius: 6px;
+    border: 1px solid #2e2e2e;
 }
 
 .social-links {
