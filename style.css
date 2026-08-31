@@ -1,3 +1,6 @@
+/* ============================================================
+   1. FONTS & ROOT VARIABLES
+   ============================================================ */
 @font-face {
     font-family: 'PrimaryFont';
     src: url('fonts/Winner-Sans.ttf') format('truetype');
@@ -12,13 +15,13 @@
 }
 
 :root {
-    --bg-color: #1C1418;
-    --card-bg: #36323A;
-    --card-hover: #504044;
-    --text-main: #F8F0F4;
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --card-hover: #262626;
+    --text-main: #f0f0f0;
     --text-muted: #a0a0a0;
-    --accent: #C8143C;
-    --accent-hover: #78283C;
+    --accent: #5865F2;
+    --accent-hover: #4752c4;
 }
 
 /* ============================================================
@@ -91,7 +94,6 @@ header p {
     justify-content: center;
 }
 
-/* Updated to support FontAwesome <i> cleanly scaling alongside SVGs! */
 .filter-btn svg, .filter-btn i {
     width: 22px;
     height: 22px;
@@ -112,7 +114,7 @@ header p {
     background: var(--accent);
     border-color: var(--accent);
     color: #fff;
-    box-shadow: 0 4px 12px rgba(120, 40, 60, 0.4);
+    box-shadow: 0 4px 12px rgba(88, 101, 242, 0.35);
 }
 
 /* ============================================================
@@ -185,7 +187,7 @@ header p {
     width: 420px;
     max-width: 90vw;
     height: 100vh;
-    background: #1C1418;
+    background: #181818;
     box-shadow: -6px 0 25px rgba(0, 0, 0, 0.85);
     transition: right 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
     z-index: 1000;
@@ -199,29 +201,30 @@ header p {
 
 .close-btn {
     position: absolute;
-    top: 16px;
+    top: 14px;
     left: 16px;
     background: transparent;
     border: none;
     color: var(--text-muted);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    transition: all 0.2s;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px; /* Squarish hover box */
+    transition: all 0.2s ease;
+    z-index: 10;
 }
 
 .close-btn:hover { 
-    color: #F0DC8C; 
-    background: rgba(240, 220, 140, 0.2);
+    color: #ff5555; 
+    background: rgba(255, 85, 85, 0.12);
 }
 
 .panel-content { 
-    padding: 50px 24px 30px; 
+    padding: 64px 24px 30px; /* Increased top padding to 64px for clean spacing above the image */
 }
 
 .panel-image {
