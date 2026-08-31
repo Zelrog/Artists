@@ -45,32 +45,58 @@ h1, h2, h3 {
     letter-spacing: 0.5px;
 }
 
-button { 
+button, a { 
     font-family: 'UIFont', sans-serif; 
 }
 
+/* ============================================================
+   3. HEADER GRID LAYOUT
+   ============================================================ */
 header {
-    position: relative;
-    text-align: center;
-    padding: 5rem 1rem 2rem; /* Increased top padding so the new top-bar fits */
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* Left, Center (shrinkwrap), Right */
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    padding: 2.5rem 3rem; /* Balanced spacing from top boundary and bottom separator */
     border-bottom: 1px solid #2a2a2a;
 }
 
+/* Left Column: Logo */
+.header-logo {
+    grid-column: 1;
+    grid-row: 1 / 4; /* Stretches alongside all 3 middle rows */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.custom-logo {
+    width: 125px; /* Scaled up to perfectly match the height of the 3 text/button rows */
+    height: 125px;
+    color: #2E2830;
+}
+
+/* Center Column: Text & Sort Buttons */
 header h1 {
+    grid-column: 2;
+    grid-row: 1;
     font-size: 2.4rem;
     margin: 0 0 0.5rem 0;
+    text-align: center;
 }
 
 header p {
+    grid-column: 2;
+    grid-row: 2;
     color: var(--text-muted);
     font-size: 1.2rem;
     margin: 0 0 1.5rem 0;
+    text-align: center;
 }
 
-/* ============================================================
-   3. FILTER BUTTONS (NEAT & UNIFORM)
-   ============================================================ */
 .filters {
+    grid-column: 2;
+    grid-row: 3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,6 +104,19 @@ header p {
     gap: 12px;
 }
 
+/* Right Column: Nav Buttons */
+.top-nav {
+    grid-column: 3;
+    grid-row: 3; /* Matches height placement perfectly with the Filter buttons */
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* ============================================================
+   4. BUTTON STYLES
+   ============================================================ */
 .filter-btn {
     background: var(--card-bg);
     color: var(--text-main);
@@ -118,8 +157,31 @@ header p {
     box-shadow: 0 4px 12px rgba(200, 20, 60, 0.4);
 }
 
+.nav-btn {
+    background: var(--card-bg);
+    color: var(--text-main);
+    border: 2px solid #333;
+    height: 48px; /* Matches the sort buttons height */
+    padding: 0 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-btn:hover {
+    background: var(--card-hover);
+    border-color: var(--accent);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
 /* ============================================================
-   4. ARTIST GRID & CARDS
+   5. ARTIST GRID & CARDS
    ============================================================ */
 .artist-grid {
     display: grid;
@@ -179,7 +241,7 @@ header p {
 }
 
 /* ============================================================
-   5. SLIDING SIDE PANEL & FALLBACK RAT EMOJI
+   6. SLIDING SIDE PANEL & FALLBACK RAT EMOJI
    ============================================================ */
 .side-panel {
     position: fixed;
@@ -287,8 +349,24 @@ header p {
     transform: translateX(4px);
 }
 
+.alt-divider {
+    border: 0;
+    height: 1px;
+    background: #333;
+    margin: 24px 0 16px 0;
+}
+
+.alt-title {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin: 0 0 12px 0;
+    font-family: 'PrimaryFont', sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
 /* ============================================================
-   6. PANEL OVERLAY
+   7. PANEL OVERLAY & ANIMATIONS
    ============================================================ */
 .panel-overlay {
     position: fixed;
@@ -309,36 +387,6 @@ header p {
     pointer-events: all;
 }
 
-/* ============================================================
-   7. NEW FEATURES: Logo, Top Nav Buttons, & Alternate Links
-   ============================================================ */
-   
-/* Header Top Bar Wrapper */
-.header-top-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 20px 25px;
-    box-sizing: border-box;
-    pointer-events: none; /* Allows clicks to pass through empty space */
-}
-
-.header-top-bar > * {
-    pointer-events: auto; /* Re-enables clicking on the buttons/logo */
-}
-
-/* Logo Setup - Made noticeably larger */
-.custom-logo {
-    width: 90px;
-    height: 90px;
-    color: #2E2830;
-}
-
-/* Glitch Animation */
 .glitch-icon {
     animation: Twitch 2.5s infinite;
 }
@@ -370,65 +418,24 @@ header p {
     }
 }
 
-/* Top Right Nav Links */
-.top-nav {
-    display: flex;
-    gap: 12px;
-}
-
-.nav-btn {
-    background: var(--card-bg);
-    color: var(--text-main);
-    border: 2px solid #333;
-    padding: 8px 16px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-family: 'UIFont', sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    transition: all 0.2s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.nav-btn:hover {
-    background: var(--card-hover);
-    border-color: var(--accent);
-    color: #fff;
-    transform: translateY(-2px);
-}
-
-/* Alternate Accounts styling in Side Panel */
-.alt-divider {
-    border: 0;
-    height: 1px;
-    background: #333;
-    margin: 24px 0 16px 0;
-}
-
-.alt-title {
-    font-size: 1.1rem;
-    color: var(--text-muted);
-    margin: 0 0 12px 0;
-    font-family: 'PrimaryFont', sans-serif;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-}
-
-/* Responsive constraints so Header acts nicely on phones */
-@media (max-width: 768px) {
-    .header-top-bar {
-        position: relative;
-        padding: 10px 15px 20px 15px;
-        flex-direction: column;
-        gap: 15px;
-    }
+/* Responsive collapse so the header stays neat on mobile */
+@media (max-width: 1050px) {
     header {
-        padding-top: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 15px;
+        padding: 2.5rem 1.5rem;
     }
-    .top-nav {
-        width: 100%;
+    .header-logo, header h1, header p, .filters, .top-nav {
+        grid-column: 1;
+        grid-row: auto;
         justify-content: center;
+        text-align: center;
     }
+    .custom-logo {
+        width: 100px;
+        height: 100px;
+    }
+    header h1 { margin: 0; }
+    header p { margin: 0 0 0.5rem 0; }
 }
