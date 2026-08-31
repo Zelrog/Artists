@@ -227,7 +227,7 @@ const artists = [
     },
     {
         name: "CorvidTree",
-        aliases: ["", ""],
+        aliases: [],
         imageExt: "png", 
         socials: {
             e621: "https://e621.net/artists/96992"
@@ -295,6 +295,198 @@ const artists = [
         imageExt: "png", 
         socials: {
             e621: "https://e621.net/artists/61848"
+        }
+    },
+    {
+        name: "zne43",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            bluesky: "https://bsky.app/profile/zne43.bsky.social"
+        }
+    },
+    {
+        name: "Sidmon The Bear",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            bluesky: "https://bsky.app/profile/sidmonkodiakbear.bsky.social"
+        }
+    },
+    {
+        name: "NotSoPhatMatt",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            bluesky: "https://bsky.app/profile/notsophatmatt.bsky.social"
+        }
+    },
+    {
+        name: "WolfieHydro",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            bluesky: "https://bsky.app/profile/wolfiehydro.bsky.social"
+        }
+    },
+    {
+        name: "Horrorbuns",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            bluesky: "https://bsky.app/profile/horrorbuns.art"
+        }
+    },
+    {
+        name: "Ander the Salamander",
+        aliases: ["Srirachamander"],
+        imageExt: "png", 
+        socials: {
+            bluesky: "https://bsky.app/profile/srirachamander.bsky.social"
+        }
+    },
+    {
+        name: "Spruceloops",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            bluesky: "https://bsky.app/profile/spruceloops.sheath.city"
+        }
+    },
+    {
+        name: "Y40ifan",
+        aliases: ["Iggi"],
+        imageExt: "png", 
+        socials: {
+            bluesky: "https://bsky.app/profile/y40ifan.bsky.social"
+        }
+    },
+    {
+        name: "AaalexOrca",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            bluesky: "https://bsky.app/profile/aaalexorca.bsky.social"
+        }
+    },
+    {
+        name: "Dead Stray Bear",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            bluesky: "https://bsky.app/profile/deadstraybear.bsky.social"
+        }
+    },
+    {
+        name: "Delirost",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            bluesky: "https://bsky.app/profile/delirost.com"
+        }
+    },
+    {
+        name: "DippuBear",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            bluesky: "https://bsky.app/profile/dippu.bsky.social"
+        }
+    },
+    {
+        name: "Minty",
+        aliases: ["Mintyderg", "Chess"],
+        imageExt: "png", 
+        socials: {
+            bluesky: "https://bsky.app/profile/chessthecollie.bsky.social"
+        }
+    },
+    {
+        name: "StinkDyde",
+        aliases: ["Dirty poss"],
+        imageExt: "png", 
+        socials: {
+            bluesky: "https://bsky.app/profile/stinkdyde.bsky.social"
+        }
+    },
+    {
+        name: "Beef",
+        aliases: ["GhostlyBeef"],
+        imageExt: "png", 
+        socials: {
+            bluesky: "https://bsky.app/profile/ghostlybeef.bsky.social"
+        }
+    },
+    {
+        name: "WildDog",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            bluesky: "https://bsky.app/profile/ohmyrichard.bsky.social"
+        }
+    },
+    {
+        name: "RusBane",
+        aliases: ["BearInBriefs"],
+        imageExt: "png", 
+        socials: {
+            bluesky: "https://bsky.app/profile/bearinbriefs.bsky.social"
+        }
+    },
+    {
+        name: "Haira",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            bluesky: "https://bsky.app/profile/twhaira.bsky.social"
+        }
+    },
+    {
+        name: "Tazork",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            bluesky: "https://bsky.app/profile/tazork.bsky.social"
+        }
+    },
+    {
+        name: "Vellum",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            bluesky: "https://bsky.app/profile/vellumartwork.bsky.social"
+        }
+    },
+    {
+        name: "CosmicTail",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            bluesky: "https://bsky.app/profile/cosmictail.bsky.social"
+        }
+    },
+    {
+        name: "TropicalSleet",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            bluesky: "https://bsky.app/profile/alleycatsleet.bsky.social"
+        }
+    },
+    {
+        name: "BorizBooh",
+        aliases: [],
+        imageExt: "png", 
+        socials: {
+            bluesky: "https://bsky.app/profile/borizbooh.bsky.social"
+        }
+    },
+    {
+        name: "Strange-Fox",
+        aliases: ["civetstranj"],
+        imageExt: "png", 
+        socials: {
+            bluesky: "https://bsky.app/profile/stranj.bsky.social"
         }
     }
 ];
