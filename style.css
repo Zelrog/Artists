@@ -13,7 +13,7 @@
 
 :root {
     --bg-color: #14181C;
-    --card-bg: #14181C;
+    --card-bg: #36323A;
     --card-hover: #504044;
     --text-main: #F8F0F4;
     --text-muted: #a0a0a0;
@@ -112,7 +112,7 @@ header p {
     background: var(--accent);
     border-color: var(--accent);
     color: #fff;
-    box-shadow: 0 4px 12px rgba(88, 101, 242, 0.35);
+    box-shadow: 0 4px 12px rgba(120, 40, 60, 0.4);
 }
 
 /* ============================================================
