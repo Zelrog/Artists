@@ -12,7 +12,7 @@
 }
 
 :root {
-    --bg-color: #14181C;
+    --bg-color: #1C1418;
     --card-bg: #36323A;
     --card-hover: #504044;
     --text-main: #F8F0F4;
@@ -185,7 +185,7 @@ header p {
     width: 420px;
     max-width: 90vw;
     height: 100vh;
-    background: #181818;
+    background: #1C1418;
     box-shadow: -6px 0 25px rgba(0, 0, 0, 0.85);
     transition: right 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
     z-index: 1000;
@@ -217,7 +217,7 @@ header p {
 
 .close-btn:hover { 
     color: #ff5555; 
-    background: rgba(255, 85, 85, 0.1);
+    background: rgba(240, 220, 140, 0.2);
 }
 
 .panel-content { 
