@@ -615,15 +615,6 @@ const artists = [
         }
     },
     {
-        name: "Dangpa",
-        aliases: [],
-        imageExt: "png", 
-        info: "",
-        socials: {
-            fa: "https://www.furaffinity.net/user/dangpa/"
-        }
-    },
-    {
         name: "Dergum",
         aliases: [],
         imageExt: "png", 
