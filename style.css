@@ -296,7 +296,7 @@ header p {
     border-radius: 12px;
     object-fit: cover;
     margin-bottom: 20px;
-    border: 2px solid #C8143C;
+    border: 1px solid #A02844;
 }
 
 /* Bulletproof fallback for missing artist images */
