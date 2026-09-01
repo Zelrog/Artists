@@ -93,6 +93,44 @@ header p {
     gap: 12px;
 }
 
+.search-container {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.search-icon {
+    position: absolute;
+    left: 14px;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    pointer-events: none;
+}
+
+.search-bar {
+    background: var(--card-bg);
+    color: var(--text-main);
+    border: 2px solid #333;
+    height: 48px;
+    padding: 0 16px 0 42px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: 'UIFont', sans-serif;
+    outline: none;
+    transition: all 0.2s ease;
+    width: 220px;
+}
+
+.search-bar::placeholder {
+    color: var(--text-muted);
+}
+
+.search-bar:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 12px rgba(200, 20, 60, 0.2);
+    background: var(--card-hover);
+}
+
 .top-nav {
     grid-column: 3;
     grid-row: 3;
