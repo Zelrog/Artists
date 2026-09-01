@@ -26,7 +26,10 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            e621: "https://e621.net/artists/26441"
+            fa: "https://www.furaffinity.net/user/galrock",
+            e621: "https://e621.net/artists/26441",
+            bsky: "https://bsky.app/profile/galrock.bsky.social",
+            twitter: "https://x.com/GalrockArt/"
         }
     },
     {
@@ -58,7 +61,10 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            e621: "https://e621.net/artists/84318"
+            fa: "https://www.furaffinity.net/user/stupidrat-",
+            e621: "https://e621.net/artists/84318",
+            bsky: "https://bsky.app/profile/demon-rat.bsky.social",
+            twitter: "https://x.com/StupidR40126236"
         }
     },
     {
@@ -107,7 +113,11 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            e621: "https://e621.net/artists/104189"
+            fa: "https://www.furaffinity.net/user/exoticd",
+            e621: "https://e621.net/artists/104189",
+            bsky: "https://bsky.app/profile/barnyardhog.bsky.social",
+            twitter: "https://x.com/barnyardhog"
+            
         }
     },
     {
@@ -137,7 +147,10 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            e621: "https://e621.net/artists/829"
+            fa: "https://www.furaffinity.net/user/dramamine/",
+            e621: "https://e621.net/artists/829",
+            bsky: "https://bsky.app/profile/gorilladrama.bsky.social",
+            twitter: ["https://x.com/gorilladrama", "https://x.com/NightPhysics"]
         }
     },
     {
@@ -146,7 +159,10 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            e621: "https://e621.net/artists/55773"
+            fa: "https://www.furaffinity.net/user/anthroraptor/",
+            e621: "https://e621.net/artists/55773",
+            bsky: "https://bsky.app/profile/hiddenraptor.bsky.social",
+            twitter: "https://x.com/TheHiddenRaptor"
         }
     },
     {
@@ -322,7 +338,10 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            e621: "https://e621.net/artists/54808"
+            fa: "https://www.furaffinity.net/user/glass0milk",
+            e621: "https://e621.net/artists/54808",
+            bsky: "https://bsky.app/profile/glass0milkad.bsky.social",
+            twitter: "https://x.com/glass0milk"
         }
     },
     {
@@ -436,8 +455,10 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            bsky: "https://bsky.app/profile/dippu.bsky.social",
             fa: "https://www.furaffinity.net/user/-breadstick-",
+            bsky: "https://bsky.app/profile/dippu.bsky.social",
+            e621: "https://e621.net/artists/40595",
+            twitter: "https://x.com/dippubear"
         }
     },
     {
@@ -495,7 +516,10 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            bsky: "https://bsky.app/profile/twhaira.bsky.social"
+            fa: "https://www.furaffinity.net/user/haira23/",
+            bsky: "https://bsky.app/profile/twhaira.bsky.social",
+            e621: "https://e621.net/artists/82588",
+            twitter: ["https://x.com/HairaNSFW", "https://x.com/TWHaira"]
         }
     },
     {
@@ -579,11 +603,14 @@ const artists = [
     },
     {
         name: "Eddio",
-        aliases: [],
+        aliases: ["SeaSprayDragon"],
         imageExt: "png", 
         info: "",
         socials: {
-            fa: "https://www.furaffinity.net/gallery/eddio"
+            fa: ["https://www.furaffinity.net/gallery/eddio", "https://www.furaffinity.net/user/seaspraydragon"],
+            e621: ["https://e621.net/artists/57430", "https://e621.net/artists/114283"],
+            bsky: ["https://bsky.app/profile/eddio.bsky.social", "https://bsky.app/profile/seaspray-dragon.bsky.social"],
+            twitter: ["https://x.com/gleeksunstroke", "https://x.com/seaspraydragon"]
         }
     },
     {
@@ -638,7 +665,10 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            fa: "https://www.furaffinity.net/user/izrez"
+            fa: "https://www.furaffinity.net/user/izrez",
+            e621: "https://e621.net/artists/32401",
+            bsky: "https://bsky.app/profile/izrez.bsky.social",
+            twitter: "https://x.com/SnakeGremlin"
         }
     },
     {
@@ -647,7 +677,10 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            fa: "https://www.furaffinity.net/user/fiaskko"
+            fa: "https://www.furaffinity.net/user/fiaskko",
+            e621: "https://e621.net/artists/125490",
+            bsky: "https://bsky.app/profile/fiaskko.bsky.social",
+            twitter: "https://x.com/FIASKKO_"
         }
     },
     {
