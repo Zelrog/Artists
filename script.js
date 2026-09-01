@@ -92,7 +92,6 @@ filters.forEach(btn => {
     });
 });
 
-// Event Listener for Search Input
 searchInput.addEventListener('input', () => {
     renderArtists();
 });
