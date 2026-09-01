@@ -74,7 +74,7 @@ const artists = [
         }
     },
     {
-        name: "contort desire",
+        name: "Contort Desire",
         aliases: ["ftdire"],
         imageExt: "png", 
         info: "",
