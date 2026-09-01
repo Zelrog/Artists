@@ -391,7 +391,7 @@ const artists = [
         socials: {
             fa: "https://www.furaffinity.net/user/aaalexorca",
             bluesky: "https://bsky.app/profile/aaalexorca.bsky.social",
-            x: "https://x.com/AaalexOrca"
+            twitter: "https://x.com/AaalexOrca"
         }
     },
     {
