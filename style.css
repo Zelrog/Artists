@@ -88,22 +88,16 @@ header p {
     grid-row: 3;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
     width: 100%;
-}
-
-.filters {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
+    min-width: 680px;
 }
 
 .search-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
     position: relative;
-    display: inline-flex;
     align-items: center;
 }
 
@@ -131,12 +125,27 @@ header p {
 
 .search-bar::placeholder {
     color: var(--text-muted);
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .search-bar:focus {
     border-color: var(--accent);
     box-shadow: 0 0 12px rgba(200, 20, 60, 0.2);
     background: var(--card-hover);
+}
+
+.filters {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.controls-spacer {
+    flex: 1;
 }
 
 .top-nav {
@@ -472,6 +481,14 @@ header p {
     
     .controls-wrapper {
         flex-direction: column;
+        min-width: 100%;
         gap: 15px;
+    }
+    .search-container, .controls-spacer {
+        flex: none;
+        width: auto;
+    }
+    .controls-spacer {
+        display: none;
     }
 }
