@@ -326,15 +326,6 @@ const artists = [
         }
     },
     {
-        name: "zne43",
-        aliases: [],
-        imageExt: "png", 
-        info: "",
-        socials: {
-            bluesky: "https://bsky.app/profile/zne43.bsky.social"
-        }
-    },
-    {
         name: "Sidmon The Bear",
         aliases: [],
         imageExt: "png", 
@@ -359,15 +350,6 @@ const artists = [
         info: "",
         socials: {
             bluesky: "https://bsky.app/profile/wolfiehydro.bsky.social"
-        }
-    },
-    {
-        name: "Horrorbuns",
-        aliases: [],
-        imageExt: "png", 
-        info: "",
-        socials: {
-            bluesky: "https://bsky.app/profile/horrorbuns.art"
         }
     },
     {
@@ -404,15 +386,6 @@ const artists = [
         info: "",
         socials: {
             bluesky: "https://bsky.app/profile/aaalexorca.bsky.social"
-        }
-    },
-    {
-        name: "Dead Stray Bear",
-        aliases: [],
-        imageExt: "png", 
-        info: "",
-        socials: {
-            bluesky: "https://bsky.app/profile/deadstraybear.bsky.social"
         }
     },
     {
@@ -561,12 +534,12 @@ const artists = [
         }
     },
     {
-        name: "Astral-Messenger",
+        name: "Eddio",
         aliases: [],
         imageExt: "png", 
         info: "",
         socials: {
-            fa: "https://www.furaffinity.net/user/astral-messenger/"
+            fa: "https://www.furaffinity.net/gallery/eddio/"
         }
     },
     {
@@ -612,15 +585,6 @@ const artists = [
         info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/crimetxt/"
-        }
-    },
-    {
-        name: "Dergum",
-        aliases: [],
-        imageExt: "png", 
-        info: "",
-        socials: {
-            fa: "https://www.furaffinity.net/user/dergum/"
         }
     },
     {
