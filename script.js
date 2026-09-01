@@ -102,8 +102,7 @@ function openSidePanel(artist) {
     const aliasesHTML = artist.aliases && artist.aliases.length > 0 
         ? `<div class="aliases">Also known as: ${artist.aliases.join(', ')}</div>` 
         : "";
-
-    // Info section processing: Convert \n back into HTML line breaks
+    
     const infoHTML = artist.info 
         ? `<div class="artist-info">${artist.info.replace(/\n/g, '<br>')}</div>`
         : "";
@@ -121,8 +120,7 @@ function openSidePanel(artist) {
             </div>
         `;
     }
-
-    // Safely replace the image with a styled Rat emoji div if it fails to load
+    
     const fallbackHTML = `<div class=&quot;panel-image fallback-rat&quot;>🐀</div>`;
 
     panelContent.innerHTML = `
@@ -153,6 +151,5 @@ window.addEventListener('keydown', (e) => {
         closeSidePanel();
     }
 });
-
 // Initial Render
 renderArtists("all");
