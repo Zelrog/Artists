@@ -86,18 +86,16 @@ header p {
 .controls-wrapper {
     grid-column: 2;
     grid-row: 3;
+    position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    min-width: 680px;
 }
 
 .search-container {
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    position: relative;
+    position: absolute;
+    right: calc(100% + 24px);
+    display: inline-flex;
     align-items: center;
 }
 
@@ -136,16 +134,11 @@ header p {
 }
 
 .filters {
-    flex: 0 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 12px;
-}
-
-.controls-spacer {
-    flex: 1;
 }
 
 .top-nav {
@@ -481,14 +474,15 @@ header p {
     
     .controls-wrapper {
         flex-direction: column;
-        min-width: 100%;
+        position: static;
         gap: 15px;
     }
-    .search-container, .controls-spacer {
-        flex: none;
-        width: auto;
+    .search-container {
+        position: static;
+        width: 100%;
+        max-width: 320px;
     }
-    .controls-spacer {
-        display: none;
+    .search-bar {
+        width: 100%;
     }
 }
