@@ -6,7 +6,7 @@ const artists = [
         info: "Deserves some belly-rubs~\nWill burn in hell for 67 years..",
         socials: {
             fa: ["https://www.furaffinity.net/user/~chronobyte", "https://www.furaffinity.net/user/kxe6"],
-            bluesky: "https://bsky.app/profile/oekanuki.bsky.social",
+            bsky: "https://bsky.app/profile/oekanuki.bsky.social",
             e621: "https://e621.net/artists/124125"
         }
     },
@@ -171,7 +171,8 @@ const artists = [
         socials: {
             fa: "https://www.furaffinity.net/user/alexxfur2",
             e621: "https://e621.net/artists/91940",
-            bluesky: "https://bsky.app/profile/alexxelquejumbroso.bsky.social"
+            bsky: "https://bsky.app/profile/alexxelquejumbroso.bsky.social",
+            twitter: "https://x.com/QuejumbrosoAlex"
         }
     },
     {
@@ -272,7 +273,8 @@ const artists = [
         socials: {
             fa: "https://www.furaffinity.net/user/andrefil360",
             e621: "https://e621.net/artists/59896",
-            bluesky: "https://bsky.app/profile/andrefil360.bsky.social"
+            bsky: "https://bsky.app/profile/andrefil360.bsky.social",
+            twitter: "https://x.com/andrefil360"
         }
     },
     {
@@ -335,7 +337,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            bluesky: "https://bsky.app/profile/sidmonkodiakbear.bsky.social"
+            bsky: "https://bsky.app/profile/sidmonkodiakbear.bsky.social"
         }
     },
     {
@@ -344,7 +346,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            bluesky: "https://bsky.app/profile/notsophatmatt.bsky.social"
+            bsky: "https://bsky.app/profile/notsophatmatt.bsky.social"
         }
     },
     {
@@ -353,7 +355,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            bluesky: "https://bsky.app/profile/wolfiehydro.bsky.social"
+            bsky: "https://bsky.app/profile/wolfiehydro.bsky.social"
         }
     },
     {
@@ -362,7 +364,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            bluesky: "https://bsky.app/profile/srirachamander.bsky.social"
+            bsky: "https://bsky.app/profile/srirachamander.bsky.social"
         }
     },
     {
@@ -371,7 +373,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            bluesky: "https://bsky.app/profile/spruceloops.sheath.city"
+            bsky: "https://bsky.app/profile/spruceloops.sheath.city"
         }
     },
     {
@@ -380,7 +382,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            bluesky: "https://bsky.app/profile/y40ifan.bsky.social"
+            bsky: "https://bsky.app/profile/y40ifan.bsky.social"
         }
     },
     {
@@ -390,7 +392,8 @@ const artists = [
         info: "",
         socials: {
             fa: "https://www.furaffinity.net/user/aaalexorca",
-            bluesky: "https://bsky.app/profile/aaalexorca.bsky.social",
+            e621: "https://e621.net/artists/125473",
+            bsky: "https://bsky.app/profile/aaalexorca.bsky.social",
             twitter: "https://x.com/AaalexOrca"
         }
     },
@@ -400,7 +403,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            bluesky: "https://bsky.app/profile/delirost.com"
+            bsky: "https://bsky.app/profile/delirost.com"
         }
     },
     {
@@ -409,7 +412,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            bluesky: "https://bsky.app/profile/dippu.bsky.social",
+            bsky: "https://bsky.app/profile/dippu.bsky.social",
             fa: "https://www.furaffinity.net/user/-breadstick-",
         }
     },
@@ -419,7 +422,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            bluesky: "https://bsky.app/profile/chessthecollie.bsky.social"
+            bsky: "https://bsky.app/profile/chessthecollie.bsky.social"
         }
     },
     {
@@ -428,7 +431,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            bluesky: "https://bsky.app/profile/stinkdyde.bsky.social"
+            bsky: "https://bsky.app/profile/stinkdyde.bsky.social"
         }
     },
     {
@@ -437,7 +440,11 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            bluesky: "https://bsky.app/profile/ghostlybeef.bsky.social"
+            fa: "https://www.furaffinity.net/user/ghostlybeef",
+            e621: "https://e621.net/artists/125474",
+            bsky: ["https://bsky.app/profile/ghostlybeef.bsky.social", "https://bsky.app/profile/spectralbeef.bsky.social"],
+            twitter: ["https://x.com/Ghostlybeef", "https://x.com/Spectralbeef"]
+            
         }
     },
     {
@@ -446,7 +453,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            bluesky: "https://bsky.app/profile/ohmyrichard.bsky.social"
+            bsky: "https://bsky.app/profile/ohmyrichard.bsky.social"
         }
     },
     {
@@ -455,7 +462,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            bluesky: "https://bsky.app/profile/bearinbriefs.bsky.social"
+            bsky: "https://bsky.app/profile/bearinbriefs.bsky.social"
         }
     },
     {
@@ -464,7 +471,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            bluesky: "https://bsky.app/profile/twhaira.bsky.social"
+            bsky: "https://bsky.app/profile/twhaira.bsky.social"
         }
     },
     {
@@ -473,7 +480,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            bluesky: "https://bsky.app/profile/tazork.bsky.social"
+            bsky: "https://bsky.app/profile/tazork.bsky.social"
         }
     },
     {
@@ -482,7 +489,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            bluesky: "https://bsky.app/profile/vellumartwork.bsky.social"
+            bsky: "https://bsky.app/profile/vellumartwork.bsky.social"
         }
     },
     {
@@ -491,7 +498,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            bluesky: "https://bsky.app/profile/cosmictail.bsky.social"
+            bsky: "https://bsky.app/profile/cosmictail.bsky.social"
         }
     },
     {
@@ -500,7 +507,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            bluesky: "https://bsky.app/profile/alleycatsleet.bsky.social"
+            bsky: "https://bsky.app/profile/alleycatsleet.bsky.social"
         }
     },
     {
@@ -509,7 +516,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            bluesky: "https://bsky.app/profile/borizbooh.bsky.social"
+            bsky: "https://bsky.app/profile/borizbooh.bsky.social"
         }
     },
     {
@@ -518,7 +525,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            bluesky: "https://bsky.app/profile/stranj.bsky.social"
+            bsky: "https://bsky.app/profile/stranj.bsky.social"
         }
     },
     {
@@ -536,7 +543,10 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            fa: "https://www.furaffinity.net/user/archiblender"
+            fa: "https://www.furaffinity.net/user/archiblender",
+            e621: "https://e621.net/artists/36749",
+            bsky: "https://bsky.app/profile/archiblender.bsky.social",
+            twitter: "https://x.com/Archiblendrr"
         }
     },
     {
@@ -554,7 +564,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            bluesky: "https://bsky.app/profile/nosoyunoso.bsky.social"
+            bsky: "https://bsky.app/profile/nosoyunoso.bsky.social"
         }
     },
     {
@@ -563,7 +573,10 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            fa: "https://www.furaffinity.net/user/berchbork"
+            fa: "https://www.furaffinity.net/user/berchbork",
+            bsky: "https://bsky.app/profile/berchbork.bsky.social",
+            twitter: "https://x.com/BerchBork"
+    
         }
     },
     {
