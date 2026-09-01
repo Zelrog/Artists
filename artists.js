@@ -1,13 +1,14 @@
 const artists = [
     {
         name: "Chronobyte",
-        aliases: ["Oekanuki"],
+        aliases: ["Oekanuki", "KxE6", "FBI"],
         imageExt: "png",
         info: "Deserves some belly-rubs~\nWill burn in hell for 67 years..",
         socials: {
-            fa: ["https://www.furaffinity.net/user/~chronobyte", "https://www.furaffinity.net/user/kxe6"],
-            bsky: "https://bsky.app/profile/oekanuki.bsky.social",
-            e621: "https://e621.net/artists/124125"
+            fa: ["https://www.furaffinity.net/user/~chronobyte", "https://www.furaffinity.net/user/kxe6", "https://www.furaffinity.net/user/~fbi"],
+            e621: "https://e621.net/artists/124125",
+            bsky: ["https://bsky.app/profile/oekanuki.bsky.social", "https://bsky.app/profile/kxe6.bsky.social"],
+            twitter: ["https://x.com/Oekanuki", "https://x.com/owoekanuwuki"]
         }
     },
     {
@@ -32,18 +33,23 @@ const artists = [
         name: "Danero",
         aliases: ["Ilmandi"],
         imageExt: "png", 
-        info: "",
+        info: "Secretly a Kobold..",
         socials: {
-            e621: "https://e621.net/artists/38954"
+            fa: ["https://www.furaffinity.net/user/danero/", "https://www.furaffinity.net/user/ilmandi/"],
+            e621: "https://e621.net/artists/38954",
+            bsky: "https://bsky.app/profile/danero.bsky.social",
+            twitter: "https://x.com/randernsk"
         }
     },
     {
         name: "Garn",
         aliases: ["Garnable"],
         imageExt: "png", 
-        info: "",
+        info: "Best moo of them all~",
         socials: {
-            e621: "https://e621.net/artists/102427"
+            fa: "https://www.furaffinity.net/user/garnii",
+            e621: "https://e621.net/artists/102427",
+            bsky: ["https://bsky.app/profile/garnthetauren.bsky.social", ""]
         }
     },
     {
@@ -80,7 +86,10 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            e621: "https://e621.net/artists/87531"
+            fa: "https://www.furaffinity.net/user/fortdire",
+            e621: "https://e621.net/artists/87531",
+            bsky: ["https://bsky.app/profile/ftdire.bsky.social", "https://bsky.app/profile/contort-d.bsky.social"],
+            twitter: ["https://x.com/ftdire", "https://x.com/contort_desire"]
         }
     },
     {
@@ -116,7 +125,10 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            e621: "https://e621.net/artists/64817"
+            fa: "https://www.furaffinity.net/user/cywolf49",
+            e621: "https://e621.net/artists/64817",
+            bsky: "https://bsky.app/profile/cywolf49.bsky.social",
+            twitter: "https://x.com/CyWolf49"
         }
     },
     {
@@ -269,7 +281,9 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            e621: "https://e621.net/artists/96992"
+            fa: "https://www.furaffinity.net/user/corvidtree",
+            e621: "https://e621.net/artists/96992",
+            bsky: "https://bsky.app/profile/corvidtree.bsky.social"
         }
     },
     {
@@ -410,7 +424,10 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            bsky: "https://bsky.app/profile/delirost.com"
+            fa: "https://www.furaffinity.net/user/delirost",
+            e621: "https://e621.net/artists/29104",
+            bsky: "https://bsky.app/profile/delirost.com",
+            twitter: "https://x.com/delirost"
         }
     },
     {
@@ -505,7 +522,10 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            bsky: "https://bsky.app/profile/cosmictail.bsky.social"
+            fa: "https://www.furaffinity.net/user/cosmictail",
+            e621: "https://e621.net/artists/71473",
+            bsky: "https://bsky.app/profile/cosmictail.bsky.social",
+            twitter: "https://x.com/cosmictail"
         }
     },
     {
@@ -617,7 +637,8 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            fa: "https://www.furaffinity.net/user/crimetxt/"
+            fa: "https://www.furaffinity.net/user/crimetxt/",
+            twitter: "https://x.com/crimetxt"
         }
     },
     {
