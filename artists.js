@@ -49,7 +49,7 @@ const artists = [
         socials: {
             fa: "https://www.furaffinity.net/user/garnii",
             e621: "https://e621.net/artists/102427",
-            bsky: ["https://bsky.app/profile/garnthetauren.bsky.social", ""]
+            bsky: "https://bsky.app/profile/garnthetauren.bsky.social"
         }
     },
     {
