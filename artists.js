@@ -61,7 +61,8 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            e621: "https://e621.net/artists/124126"
+            e621: "https://e621.net/artists/124126",
+            bsky: "https://bsky.app/profile/roo.parts"
         }
     },
     {
@@ -181,7 +182,10 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            e621: "https://e621.net/artists/11819"
+            fa: "https://www.furaffinity.net/user/captainnikko",
+            e621: "https://e621.net/artists/11819",
+            bsky: "https://bsky.app/profile/captainnikko.bsky.social",
+            twitter: "https://x.com/Nikkonator5000"
         }
     },
     {
@@ -190,7 +194,10 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            e621: "https://e621.net/artists/20115"
+            fa: "https://www.furaffinity.net/user/bowserboy101/",
+            e621: "https://e621.net/artists/20115",
+            bsky: "https://bsky.app/profile/sobekdraws2.bsky.social",
+            twitter: "https://x.com/SobekDraws/"
         }
     },
     {
@@ -516,6 +523,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
+            fa: "https://www.furaffinity.net/user/boriz/",
             bsky: "https://bsky.app/profile/borizbooh.bsky.social"
         }
     },
@@ -585,7 +593,10 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            fa: "https://www.furaffinity.net/user/bin/"
+            fa: "https://www.furaffinity.net/user/bin/",
+            e621: "https://e621.net/artists/16943",
+            bsky: "https://bsky.app/profile/binpand.bsky.social",
+            twitter: "https://x.com/Binpand"
         }
     },
     {
@@ -594,7 +605,10 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            fa: "https://www.furaffinity.net/user/chocolateandmilk"
+            fa: "https://www.furaffinity.net/user/chocolateandmilk",
+            e621: "https://e621.net/artists/74557",
+            bsky: "https://bsky.app/profile/chocolateandmilk.bsky.social",
+            twitter: "https://x.com/chocobeverage"
         }
     },
     {
