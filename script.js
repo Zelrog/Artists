@@ -82,6 +82,7 @@ function renderArtists() {
     }
 }
 
+// Event Listeners for Filters
 filters.forEach(btn => {
     btn.addEventListener('click', (e) => {
         filters.forEach(b => b.classList.remove('active'));
@@ -144,7 +145,7 @@ function openSidePanel(artist) {
         `;
     }
     
-    const fallbackHTML = `<div class="panel-image fallback-rat">🐀</div>`;
+    const fallbackHTML = `<div class=&quot;panel-image fallback-rat&quot;>🐀</div>`;
 
     panelContent.innerHTML = `
         <img src="${imgSrc}" alt="${artist.name}" class="panel-image" onerror="this.outerHTML='${fallbackHTML}';">
