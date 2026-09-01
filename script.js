@@ -27,8 +27,11 @@ const sidePanel = document.getElementById('sidePanel');
 const panelOverlay = document.getElementById('panelOverlay');
 const closePanelBtn = document.getElementById('closePanel');
 const panelContent = document.getElementById('panelContent');
+const searchInput = document.getElementById('searchInput');
 
-function renderArtists(filterPlatform = "all") {
+let currentFilter = "all";
+
+function renderArtists() {
     grid.innerHTML = ""; 
     
     if (typeof artists === "undefined" || !artists.length) {
@@ -36,13 +39,24 @@ function renderArtists(filterPlatform = "all") {
         return;
     }
 
+    const searchQuery = searchInput.value.toLowerCase().trim();
+
     const sortedArtists = [...artists].sort((a, b) => 
         a.name.localeCompare(b.name, undefined, { sensitivity: 'base' })
     );
 
     sortedArtists.forEach(artist => {
-        if (filterPlatform !== "all" && !artist.socials[filterPlatform]) {
+        if (currentFilter !== "all" && !artist.socials[currentFilter]) {
             return; 
+        }
+        
+        if (searchQuery) {
+            const nameMatch = artist.name.toLowerCase().includes(searchQuery);
+            const aliasMatch = artist.aliases && artist.aliases.some(alias => alias.toLowerCase().includes(searchQuery));
+            
+            if (!nameMatch && !aliasMatch) {
+                return;
+            }
         }
         
         let previewIconsHTML = "";
@@ -62,6 +76,10 @@ function renderArtists(filterPlatform = "all") {
         card.addEventListener('click', () => openSidePanel(artist));
         grid.appendChild(card);
     });
+
+    if (grid.innerHTML === "") {
+        grid.innerHTML = `<p style="text-align:center; color:#888; grid-column: 1 / -1;">No artists match your search.</p>`;
+    }
 }
 
 filters.forEach(btn => {
@@ -69,8 +87,13 @@ filters.forEach(btn => {
         filters.forEach(b => b.classList.remove('active'));
         const targetBtn = e.currentTarget;
         targetBtn.classList.add('active');
-        renderArtists(targetBtn.dataset.platform);
+        currentFilter = targetBtn.dataset.platform;
+        renderArtists();
     });
+});
+
+searchInput.addEventListener('input', () => {
+    renderArtists();
 });
 
 function openSidePanel(artist) {
@@ -121,7 +144,7 @@ function openSidePanel(artist) {
         `;
     }
     
-    const fallbackHTML = `<div class=&quot;panel-image fallback-rat&quot;>🐀</div>`;
+    const fallbackHTML = `<div class="panel-image fallback-rat">🐀</div>`;
 
     panelContent.innerHTML = `
         <img src="${imgSrc}" alt="${artist.name}" class="panel-image" onerror="this.outerHTML='${fallbackHTML}';">
@@ -151,5 +174,5 @@ window.addEventListener('keydown', (e) => {
         closeSidePanel();
     }
 });
-// Initial Render
-renderArtists("all");
+
+renderArtists();
