@@ -587,15 +587,6 @@ const artists = [
         }
     },
     {
-        name: "Nosoyunoso",
-        aliases: ["BearsBears"],
-        imageExt: "png", 
-        info: "",
-        socials: {
-            bsky: "https://bsky.app/profile/nosoyunoso.bsky.social"
-        }
-    },
-    {
         name: "BerchBork",
         aliases: [],
         imageExt: "png", 
@@ -738,6 +729,18 @@ const artists = [
         info: "",
         socials: {
             e621: "https://e621.net/artists/43540"
+        }
+    },
+    {
+        name: "Gh0stFood",
+        aliases: [],
+        imageExt: "png", 
+        info: "",
+        socials: {
+            fa: "https://www.furaffinity.net/user/ghostfood",
+            e621: "https://e621.net/artists/71332",
+            bsky: "https://bsky.app/profile/ghostfood.bsky.social",
+            twitter: "https://x.com/GH0STFOOD"
         }
     }
 ];
