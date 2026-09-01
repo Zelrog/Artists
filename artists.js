@@ -169,7 +169,9 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            e621: "https://e621.net/artists/91940"
+            fa: "https://www.furaffinity.net/user/alexxfur2",
+            e621: "https://e621.net/artists/91940",
+            bluesky: "https://bsky.app/profile/alexxelquejumbroso.bsky.social"
         }
     },
     {
@@ -268,7 +270,9 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            e621: "https://e621.net/artists/59896"
+            fa: "https://www.furaffinity.net/user/andrefil360",
+            e621: "https://e621.net/artists/59896",
+            bluesky: "https://bsky.app/profile/andrefil360.bsky.social"
         }
     },
     {
@@ -385,7 +389,9 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            bluesky: "https://bsky.app/profile/aaalexorca.bsky.social"
+            fa: "https://www.furaffinity.net/user/aaalexorca",
+            bluesky: "https://bsky.app/profile/aaalexorca.bsky.social",
+            x: "https://x.com/AaalexOrca"
         }
     },
     {
@@ -404,7 +410,7 @@ const artists = [
         info: "",
         socials: {
             bluesky: "https://bsky.app/profile/dippu.bsky.social",
-            fa: "https://www.furaffinity.net/user/-breadstick-/",
+            fa: "https://www.furaffinity.net/user/-breadstick-",
         }
     },
     {
@@ -521,7 +527,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            fa: "https://www.furaffinity.net/user/absolutelynopetrol/"
+            fa: "https://www.furaffinity.net/user/absolutelynopetrol"
         }
     },
     {
@@ -530,7 +536,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            fa: "https://www.furaffinity.net/user/archiblender/"
+            fa: "https://www.furaffinity.net/user/archiblender"
         }
     },
     {
@@ -539,7 +545,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            fa: "https://www.furaffinity.net/gallery/eddio/"
+            fa: "https://www.furaffinity.net/gallery/eddio"
         }
     },
     {
@@ -557,7 +563,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            fa: "https://www.furaffinity.net/user/berchbork/"
+            fa: "https://www.furaffinity.net/user/berchbork"
         }
     },
     {
@@ -575,7 +581,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            fa: "https://www.furaffinity.net/user/chocolateandmilk/"
+            fa: "https://www.furaffinity.net/user/chocolateandmilk"
         }
     },
     {
@@ -593,7 +599,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            fa: "https://www.furaffinity.net/user/izrez/"
+            fa: "https://www.furaffinity.net/user/izrez"
         }
     },
     {
@@ -602,7 +608,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            fa: "https://www.furaffinity.net/user/fiaskko/"
+            fa: "https://www.furaffinity.net/user/fiaskko"
         }
     },
     {
@@ -611,7 +617,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            fa: "https://www.furaffinity.net/user/jamzenn/"
+            fa: "https://www.furaffinity.net/user/jamzenn"
         }
     },
     {
@@ -620,7 +626,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            fa: "https://www.furaffinity.net/user/minedoo/"
+            fa: "https://www.furaffinity.net/user/minedoo"
         }
     },
     {
@@ -629,7 +635,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            fa: "https://www.furaffinity.net/user/oldgreg/"
+            fa: "https://www.furaffinity.net/user/oldgreg"
         }
     },
     {
@@ -638,7 +644,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            fa: "https://www.furaffinity.net/user/rool/"
+            fa: "https://www.furaffinity.net/user/rool"
         }
     },
     {
@@ -647,7 +653,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            fa: "https://www.furaffinity.net/user/tobiscut/"
+            fa: "https://www.furaffinity.net/user/tobiscut"
         }
     },
     {
@@ -656,7 +662,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            fa: "https://www.furaffinity.net/user/stasstoz/"
+            fa: "https://www.furaffinity.net/user/stasstoz"
         }
     },
     {
@@ -665,7 +671,7 @@ const artists = [
         imageExt: "png", 
         info: "",
         socials: {
-            fa: "https://www.furaffinity.net/user/wolfsl/"
+            fa: "https://www.furaffinity.net/user/wolfsl"
         }
     },
     {
