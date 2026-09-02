@@ -102,6 +102,8 @@ header p {
 .search-icon {
     position: absolute;
     left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
     color: var(--text-muted);
     font-size: 1.1rem;
     pointer-events: none;
@@ -454,35 +456,112 @@ header p {
 
 @media (max-width: 1050px) {
     header {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-rows: auto auto auto auto;
         gap: 15px;
         padding: 2.5rem 1.5rem;
     }
-    .header-logo, header h1, header p, .controls-wrapper, .top-nav {
-        grid-column: 1;
-        grid-row: auto;
+    .header-logo {
+        grid-column: 2;
+        grid-row: 1;
         justify-content: center;
-        text-align: center;
+        display: flex;
     }
     .custom-logo {
         width: 100px;
         height: 100px;
     }
-    header h1 { margin: 0; }
-    header p { margin: 0 0 0.5rem 0; }
-    
+    header h1 { 
+        grid-column: 1 / 4;
+        grid-row: 2;
+        margin: 0; 
+        text-align: center;
+    }
+    header p { 
+        grid-column: 1 / 4;
+        grid-row: 3;
+        margin: 0 0 0.5rem 0; 
+        text-align: center;
+    }
     .controls-wrapper {
+        grid-column: 1 / 4;
+        grid-row: 4;
         flex-direction: column;
-        position: static;
+        position: relative;
         gap: 15px;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
     }
     .search-container {
-        position: static;
+        position: relative;
         width: 100%;
-        max-width: 320px;
+        right: auto;
+        left: auto;
     }
     .search-bar {
         width: 100%;
+    }
+    .filters {
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 8px;
+    }
+    .filter-btn {
+        flex: 1;
+        padding: 0;
+        min-width: 0;
+    }
+    .top-nav {
+        display: contents;
+    }
+    .friends-btn {
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: start;
+        align-self: center;
+    }
+    .email-btn {
+        grid-column: 3;
+        grid-row: 1;
+        justify-self: end;
+        align-self: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .artist-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 1.5rem 1rem;
+    }
+    header {
+        padding: 1.5rem 1rem;
+    }
+    .nav-btn {
+        padding: 0 12px;
+        font-size: 0.9rem;
+        height: 40px;
+    }
+    .filter-btn {
+        font-size: 1.1rem;
+        height: 40px;
+    }
+    .filter-btn svg, .filter-btn i {
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+    }
+    .artist-card {
+        padding: 16px 8px;
+    }
+    .artist-card h3 {
+        font-size: 1.1rem;
+    }
+    .search-bar {
+        height: 44px;
     }
 }
