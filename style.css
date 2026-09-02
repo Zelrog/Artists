@@ -322,7 +322,7 @@ header p {
     aspect-ratio: 4 / 3;
     border-radius: 12px;
     object-fit: cover;
-    margin-bottom: 20px;
+    margin-bottom: 4px;
     border: 1px solid #A02844;
 }
 
