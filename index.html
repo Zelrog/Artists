@@ -27,13 +27,15 @@
         
         <div class="controls-wrapper">
             
-            <div class="search-container">
-                <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                <input type="text" id="searchInput" class="search-bar" placeholder="SEARCH">
+            <div class="search-and-all">
+                <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="searchInput" class="search-bar" placeholder="SEARCH">
+                </div>
+                <button class="filter-btn active all-btn" data-platform="all">ALL</button>
             </div>
             
             <div class="filters" id="filters">
-                <button class="filter-btn active" data-platform="all">ALL</button>
                 <button class="filter-btn" data-platform="fa" title="FurAffinity">
                     <i class="fa-solid fa-paw"></i>
                 </button>
