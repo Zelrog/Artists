@@ -82,7 +82,6 @@ function renderArtists() {
     }
 }
 
-// Event Listeners for Filters
 filters.forEach(btn => {
     btn.addEventListener('click', (e) => {
         filters.forEach(b => b.classList.remove('active'));
