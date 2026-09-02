@@ -864,7 +864,7 @@ const artists = [
         info: "",
         socials: {
 			fa: "https://www.furaffinity.net/user/y40ifan",
-			e621: "",
+			e621: "https://e621.net/artists/125548",
             bsky: "https://bsky.app/profile/y40ifan.bsky.social",
 			twitter: "https://x.com/Y40ifan"
         }
