@@ -22,7 +22,7 @@ function renderArtists() {
     const dataList = typeof artists !== "undefined" ? artists : (typeof friends !== "undefined" ? friends : []);
     
     if (!dataList || !dataList.length) {
-        grid.innerHTML = `<p style="text-align:center; color:#888;">No items found. Add some inside your JS file!</p>`;
+        grid.innerHTML = `<p class="empty-message">No items found. Add some inside your JS file!</p>`;
         return;
     }
 
@@ -65,7 +65,7 @@ function renderArtists() {
     });
 
     if (grid.innerHTML === "") {
-        grid.innerHTML = `<p style="text-align:center; color:#888; grid-column: 1 / -1;">No matches found.</p>`;
+        grid.innerHTML = `<p class="empty-message">No matches found.</p>`;
     }
 }
 
