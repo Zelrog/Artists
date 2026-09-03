@@ -129,7 +129,7 @@ const artists = [
         }
     },
     {
-        name: "Chocolate And Milk",
+        name: "Chocolate & Milk",
         aliases: ["ChocoBeverage"],
         imageExt: "png", 
         info: "",
