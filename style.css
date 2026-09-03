@@ -272,7 +272,6 @@ header p {
     font-size: 1.1rem;
     white-space: nowrap; 
     position: relative;
-    left: -2px;
     letter-spacing: 0.2;
 }
 
