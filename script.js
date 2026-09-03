@@ -159,11 +159,15 @@ function openSidePanel(artist) {
 
     sidePanel.classList.add('open');
     panelOverlay.classList.add('active');
+    
+    document.body.classList.add('no-scroll');
 }
 
 function closeSidePanel() {
     sidePanel.classList.remove('open');
     panelOverlay.classList.remove('active');
+    
+    document.body.classList.remove('no-scroll');
 }
 
 closePanelBtn.addEventListener('click', closeSidePanel);
