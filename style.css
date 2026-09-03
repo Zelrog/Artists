@@ -638,7 +638,6 @@ header p {
         font-size: 0.82rem; 
         letter-spacing: 0.2px;
         position: relative;
-        left: -3px;
     }
     .preview-icons {
         gap: 8px;
