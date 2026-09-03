@@ -1,0 +1,222 @@
+/* ============================================================
+   1. FONTS & VARIABLES
+   ============================================================ */
+@font-face {
+    font-family: 'Winner-Sans';
+    src: url('fonts/Winner-Sans.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Back-Issues';
+    src: url('fonts/Back-Issues.ttf') format('truetype'); 
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Autumn-Rats';
+    src: url('fonts/Autumn-Rats.ttf') format('truetype'); 
+    font-weight: 900;
+    font-style: normal;
+}
+
+:root {
+    /* Background Gradient Colors */
+    --bg: #121212;
+    
+    /* Card Colors */
+    --card-bg: #1e1e1e;
+    
+    /* Accents */
+    --accent: #C8143C;
+    --accent-hover: #A02844;
+    --card-hover: #262626;
+    --btn-bg: #504044;
+    
+    /* Text Colors */
+    --text-main: #f0f0f0;
+    --text-muted: #a0a0a0;
+}
+
+/* ============================================================
+   2. GLOBAL STYLES
+   ============================================================ */
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Back-Issues', "Courier New", Courier, monospace;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: var(--text-main);
+    background: var(--bg); 
+    overflow: hidden;
+}
+
+/* ============================================================
+   3. CARD & TYPOGRAPHY
+   ============================================================ */
+.card { 
+    position: relative;
+    text-align: center; 
+    padding: 40px 30px 40px; 
+    background: var(--card-bg); 
+    border-radius: 12px; 
+    border: 2px solid var(--accent);
+    box-shadow: 0 0 25px rgba(120, 40, 60, 0.7); 
+    max-width: 420px;
+    width: 90%;
+    overflow: hidden;
+    animation: slideUpFade 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.icon-header {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    color: #2E2830;
+}
+
+.custom-logo {
+    width: 85px;
+    height: 85px;
+    display: block;
+}
+
+h2 {
+    font-family: 'Winner-Sans', sans-serif;
+    color: var(--accent);
+    margin: 0 0 15px 0;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+.sub-text {
+    font-size: 1rem;
+    color: var(--text-main);
+    margin: 0 auto 30px auto;
+    line-height: 1.5;
+    max-width: 90%;
+}
+
+/* ============================================================
+   4. BUTTON & FOOTER
+   ============================================================ */
+.btn { 
+    font-family: 'Winner-Sans', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 32px;
+    background-color: var(--btn-bg);
+    color: var(--text-main);
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid #333;
+}
+
+.btn:hover { 
+    background-color: var(--accent); 
+    color: var(--text-main);
+    border-color: var(--accent-hover);
+    box-shadow: 0 0 15px rgba(160, 40, 68, 0.6);
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.note {
+    font-family: 'Autumn-Rats', sans-serif;
+    font-weight: 900;
+    font-size: 0.9em;
+    color: var(--text-muted);
+    margin-top: 30px;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+}
+
+/* ============================================================
+   5. PROGRESS BAR
+   ============================================================ */
+.progress-track {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: transparent;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 100%;
+    background: var(--accent);
+    transform-origin: left;
+    animation: shrinkBar 2.5s linear forwards; 
+}
+
+/* ============================================================
+   6. ANIMATIONS
+   ============================================================ */
+@keyframes slideUpFade {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Glitch Animation */
+.glitch-icon {
+    animation: Twitch 2.5s infinite;
+}
+
+@keyframes Twitch {
+    0%, 70%, 100% {
+        transform: translate(0, 0) skew(0deg);
+        filter: drop-shadow(0 0 0 transparent);
+    }
+    72% {
+        transform: translate(-4px, 1px) skew(-6deg);
+        filter: drop-shadow(-4px 0 0 #00ffff) drop-shadow(4px 0 0 #ff0055);
+    }
+    75% {
+        transform: translate(3px, -2px) skew(4deg);
+        filter: drop-shadow(3px -1px 0 #00ffff) drop-shadow(-3px 1px 0 #ff0055);
+    }
+    78% {
+        transform: translate(-2px, 2px) skew(-2deg);
+        filter: drop-shadow(0 0 12px var(--accent));
+    }
+    81% {
+        transform: translate(4px, -1px) skew(7deg);
+        filter: drop-shadow(-3px 0 0 #00ffff) drop-shadow(3px 0 0 #ff0055);
+    }
+    84% {
+        transform: translate(0, 0) skew(0deg);
+        filter: drop-shadow(0 0 0 transparent);
+    }
+}
+
+@keyframes shrinkBar {
+    0% { width: 100%; }
+    100% { width: 0%; }
+}
