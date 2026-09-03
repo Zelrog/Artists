@@ -42,7 +42,7 @@ body.no-scroll {
 
 h1, h2, h3 { 
     font-family: 'PrimaryFont', sans-serif; 
-    letter-spacing: 0.5px;
+    letter-spacing: 0.6px;
 }
 
 button, a { 
@@ -273,7 +273,7 @@ header p {
     white-space: nowrap; 
     position: relative;
     left: -2px;
-    letter-spacing: 0;
+    letter-spacing: 0.2;
 }
 
 .preview-icons {
@@ -443,7 +443,7 @@ header p {
     color: var(--text-muted);
     margin: 0 0 12px 0;
     font-family: 'PrimaryFont', sans-serif;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.6px;
     text-transform: uppercase;
 }
 
@@ -637,7 +637,7 @@ header p {
     }
     .artist-card h3 {
         font-size: 0.82rem; 
-        letter-spacing: -0.2px;
+        letter-spacing: 0.2px;
         position: relative;
         left: -3px;
     }
