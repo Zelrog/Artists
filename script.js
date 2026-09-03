@@ -22,7 +22,7 @@ function renderArtists() {
     const dataList = typeof artists !== "undefined" ? artists : (typeof friends !== "undefined" ? friends : []);
     
     if (!dataList || !dataList.length) {
-        grid.innerHTML = `<p class="empty-message">No items found. Add some inside your JS file!</p>`;
+        grid.innerHTML = `<p class="empty-message">No data to display. List is empty or corrupted!</p>`;
         return;
     }
 
