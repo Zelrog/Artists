@@ -129,8 +129,8 @@ const artists = [
         }
     },
     {
-        name: "Chocolate&Milk",
-        aliases: ["ChocolateAndMilk", "ChocoBeverage"],
+        name: "Chocolate And Milk",
+        aliases: ["ChocoBeverage"],
         imageExt: "png", 
         info: "",
         socials: {
