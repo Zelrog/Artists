@@ -300,6 +300,17 @@ header p {
     justify-content: center;
 }
 
+.empty-message {
+    grid-column: 1 / -1;
+    width: 100%;
+    text-align: center;
+    color: #888;
+    font-size: 1.15rem;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+    line-height: 1.6;
+}
+
 .side-panel {
     position: fixed;
     top: 0;
