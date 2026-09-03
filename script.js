@@ -180,26 +180,20 @@ document.addEventListener('DOMContentLoaded', () => {
             if (e.ctrlKey || e.metaKey || e.shiftKey || this.target === '_blank') return;
             const targetUrl = this.href;
             if (targetUrl === window.location.href) return;
-            e.preventDefault();
-            document.body.classList.add('prepare-exit');
+            e.preventDefault(); 
+            document.body.classList.remove('page-loaded');
+            document.body.classList.add('page-exiting');
             
-            requestAnimationFrame(() => {
-                requestAnimationFrame(() => {
-                    document.body.classList.remove('page-loaded', 'prepare-exit');
-                    document.body.classList.add('page-exiting');
-                    
-                    setTimeout(() => {
-                        window.location.href = targetUrl;
-                    }, 400);
-                });
-            });
+            setTimeout(() => {
+                window.location.href = targetUrl;
+            }, 500); 
         });
     });
 });
 
 window.addEventListener('pageshow', (event) => {
     if (event.persisted) {
-        document.body.classList.remove('page-exiting', 'prepare-exit');
+        document.body.classList.remove('page-exiting');
         document.body.classList.add('page-loaded');
     }
 });
