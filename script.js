@@ -167,3 +167,39 @@ window.addEventListener('keydown', (e) => {
 });
 
 renderArtists();
+
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        document.body.classList.add('page-loaded');
+    }, 30);
+
+    const navLinks = document.querySelectorAll('.nav-btn');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            if (e.ctrlKey || e.metaKey || e.shiftKey || this.target === '_blank') return;
+            const targetUrl = this.href;
+            if (targetUrl === window.location.href) return;
+            e.preventDefault();
+            document.body.classList.add('prepare-exit');
+            
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    document.body.classList.remove('page-loaded', 'prepare-exit');
+                    document.body.classList.add('page-exiting');
+                    
+                    setTimeout(() => {
+                        window.location.href = targetUrl;
+                    }, 400);
+                });
+            });
+        });
+    });
+});
+
+window.addEventListener('pageshow', (event) => {
+    if (event.persisted) {
+        document.body.classList.remove('page-exiting', 'prepare-exit');
+        document.body.classList.add('page-loaded');
+    }
+});
