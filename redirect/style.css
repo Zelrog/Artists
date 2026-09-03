@@ -3,21 +3,21 @@
    ============================================================ */
 @font-face {
     font-family: 'Winner-Sans';
-    src: url('fonts/Winner-Sans.ttf') format('truetype'); 
+    src: url('../fonts/Winner-Sans.ttf') format('truetype'); 
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Back-Issues';
-    src: url('fonts/Back-Issues.ttf') format('truetype'); 
+    src: url('../fonts/Back-Issues.ttf') format('truetype'); 
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Autumn-Rats';
-    src: url('fonts/Autumn-Rats.ttf') format('truetype'); 
+    src: url('../fonts/Autumn-Rats.ttf') format('truetype'); 
     font-weight: 900;
     font-style: normal;
 }
