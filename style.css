@@ -647,6 +647,6 @@ header p {
         height: 18px;
     }
     .panel-content { 
-        padding: 64px 20px 220px;
+        padding: 64px 20px 64px;
     }
 }
