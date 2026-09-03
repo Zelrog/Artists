@@ -36,6 +36,11 @@ body {
     width: 100%;
 }
 
+/* Utility class to stop body scroll when panel is open */
+body.no-scroll {
+    overflow: hidden;
+}
+
 h1, h2, h3 { 
     font-family: 'PrimaryFont', sans-serif; 
     letter-spacing: 0.5px;
@@ -50,8 +55,9 @@ header {
     grid-template-columns: 1fr auto 1fr;
     grid-template-rows: auto auto auto;
     align-items: center;
-    padding: 2.5rem 3rem;
+    padding: 15px 3rem 2.5rem 3rem;
     border-bottom: 1px solid #2a2a2a;
+    position: relative;
 }
 
 .header-logo {
@@ -152,12 +158,12 @@ header p {
 }
 
 .top-nav {
-    grid-column: 3;
-    grid-row: 3;
+    position: absolute;
+    top: 15px;
+    right: 3rem;
     display: flex;
+    flex-direction: column;
     gap: 12px;
-    justify-content: flex-end;
-    align-items: center;
 }
 
 .filter-btn {
@@ -204,16 +210,17 @@ header p {
     background: var(--card-bg);
     color: var(--text-main);
     border: 2px solid #333;
-    height: 48px;
-    padding: 0 16px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
     border-radius: 8px;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: bold;
     transition: all 0.2s ease;
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    justify-content: center;
 }
 
 .nav-btn:hover {
@@ -242,7 +249,7 @@ header p {
                 box-shadow 0.2s ease, 
                 border-color 0.2s ease;
     border: 1px solid #2e2e2e;
-    min-width: 0; /* Guarantee safety against long strings */
+    min-width: 0;
 }
 
 .artist-card:hover {
@@ -254,9 +261,8 @@ header p {
 
 .artist-card h3 { 
     margin: 0 0 12px 0;
-    font-size: 1.3rem;
-    word-break: break-word; /* Allows really long titles to fold over beautifully */
-    overflow-wrap: break-word;
+    font-size: 1.1rem;
+    white-space: nowrap; 
 }
 
 .preview-icons {
@@ -471,14 +477,10 @@ header p {
         flex-direction: column;
         align-items: center;
         gap: 15px;
-        padding: 2rem 1.5rem;
+        padding: 15px 1.5rem 2rem 1.5rem;
     }
     .top-nav {
-        order: -1;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 5px; 
+        right: 1.5rem;
     }
     .header-logo {
         display: flex;
@@ -498,9 +500,9 @@ header p {
         text-align: center;
     }
     .nav-btn {
-        height: 38px;
-        padding: 0 14px;
-        font-size: 0.9rem;
+        width: 42px;
+        height: 42px;
+        font-size: 1.05rem;
     }
     
     .controls-wrapper {
@@ -519,7 +521,7 @@ header p {
     }
     
     .search-container {
-        grid-column: span 3;
+        grid-column: span 3; 
         position: relative;
         width: 100%;
         left: auto;
@@ -527,7 +529,7 @@ header p {
     }
     
     .all-btn {
-        grid-column: span 2;
+        grid-column: span 2; 
         width: 100%;
         padding: 0;
         margin: 0;
@@ -548,15 +550,18 @@ header p {
         padding: 1.5rem 0.75rem; 
     }
     header {
-        padding: 1.5rem 1rem;
+        padding: 15px 1rem 1.5rem 1rem;
+    }
+    .top-nav {
+        right: 1rem;
     }
     .nav-btn {
-        height: 36px;
-        padding: 0 12px;
-        font-size: 0.85rem;
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
     }
     .search-and-all, .filters {
-        gap: 8px;
+        gap: 8px; 
     }
     .all-btn, .filter-btn, .search-bar {
         height: 44px;
@@ -570,7 +575,7 @@ header p {
         padding: 14px 6px; 
     }
     .artist-card h3 {
-        font-size: 1.05rem; 
+        font-size: 0.85rem; 
     }
     .preview-icons {
         gap: 8px;
