@@ -118,8 +118,6 @@ function openSidePanel(artist) {
         : "";
 
     const imgName = artist.name.replace(/\s+/g, '');
-    
-    // Automatically path to the shared root /images/ folder!
     const imgSrc = `../images/${imgName}.${artist.imageExt || 'png'}`;
 
     let alternateSection = "";
