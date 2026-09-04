@@ -846,15 +846,15 @@ const artists = [
         }
     },
     {
-        name: "Xeoniios",
-        aliases: ["Tony"],
+        name: "Kenkudog",
+        aliases: ["Kenkudog24"],
         imageExt: "png", 
         info: "",
         socials: {
-			fa: "https://www.furaffinity.net/user/xeoniios",
-            e621: "https://e621.net/artists/67657",
-			bsky: "https://bsky.app/profile/xeoniios.bsky.social",
-			twitter: ["https://x.com/xeoniios", "https://x.com/gaytorfucker"]
+			fa: "https://www.furaffinity.net/user/kenkudo24",
+            e621: "https://e621.net/artists/58495",
+			bsky: "https://bsky.app/profile/dogiswho.bsky.social",
+			twitter: "https://x.com/KENKUDO24"
         }
     },
     {
